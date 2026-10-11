@@ -22,6 +22,7 @@ Each figure and table was extracted by an AI agent from the PDF text and page im
 | `cross-report-aggregates.json` | Counts by report, module, data level, source, method and chart type |
 | `kenya-replication-inventory.md`, `kenya-figures.json` | Detailed Kenya pass with headline values to use as replication targets, plus a bibliography profile |
 | `firm-data-access.md` | Whether the firm microdata behind the CGJR firm charts can be accessed, country by country, with public substitutes |
+| `build-plan.md`, `build-plan-review.md` | Overall plan: tool catalog, public API access (domains, keys, licences), allowlist, 12-week roadmap, and the engineering and economics review behind it |
 | `first-pass-inventory.md` | Inventory built from public information before the PDFs were available, with module IDs, the caveat list and the validation plan |
 
 ## Headline findings

@@ -1,0 +1,1253 @@
+[
+ {
+  "label": "unnumbered (table: Urgent Policy Priorities for a Prosperous Kenya)",
+  "pdf_page": 8,
+  "section": "Executive Summary",
+  "kind": "table",
+  "title": "Urgent Policy Priorities for a Prosperous Kenya",
+  "chart_type": "table, 2 columns (Economic constraint | Urgent Policy Priorities) with bullet lists; starts on PDF p.8 and continues on PDF p.9; two decorative icons above the column headers",
+  "indicators": [
+   "Fiscal constraint: enhance efficiency and equity of the tax system; improve expenditure efficiency and equity; improve transparency and accountability of public spending; strengthen governance and accountability to contain corruption",
+   "External constraint: implement trade agreements (AfCFTA, AGOA, EU-EPA); align domestic regulations with international standards, especially environmental standards; boost FDI and investment promotion (systemic support to investors, open domestic sectors to FDI, implement international investment protocols, foster the role of KenInvest)",
+   "Productivity constraint: national and sub-national licensing (address economy-wide and sectoral regulatory inefficiencies, align county licensing procedures to avoid fragmentation); reduce barriers to competition in key sectors, including where enterprises with State shareholding operate; increase access to affordable infrastructure services and improve infrastructure management; enhance equity and quality in basic and tertiary education, and boost innovation",
+   "Climate constraint: enhance water productivity of existing rainfed cropping systems and sustain water resources in landscapes; explore concessional green financing (credit-enhanced sovereign green or sustainability-linked financing, SLF); leverage natural capital (conservation, ecotourism) [p.9]; multifaceted approach to the green transition: renewable energy, green transport, logistics operations, digital comparative advantage [p.9]"
+  ],
+  "geography": "Kenya only",
+  "time_span": "n/a (policy agenda)",
+  "source_note": "No source line printed",
+  "data_sources": [],
+  "method": "Qualitative summary of policy recommendations; no data",
+  "data_level": "unknown",
+  "publicly_replicable": "yes",
+  "replication_notes": "Text table only. A table or text-rendering tool can reproduce it from the transcribed content. No data is needed. Continues on PDF p.9 (printed p.6) with the last two climate bullets.",
+  "key_values": [
+   "4 constraint rows: Fiscal, External, Productivity, Climate",
+   "Fiscal 4 bullets, External 3, Productivity 4, Climate 4 (2 on p.8, 2 on p.9)"
+  ]
+ },
+ {
+  "label": "Figure 1",
+  "pdf_page": 10,
+  "section": "1 Introduction",
+  "kind": "chart",
+  "title": "Real GDP growth, Kenya, and selected country groups, 2001\u20132024 (headline: Kenya's growth performance during the last two decades has been relatively strong)",
+  "chart_type": "multi-line time series. Kenya is a solid line; LMIC, UMIC and SSA are dashed. Grey shaded bands mark the Global Financial Crisis (~2008\u20132009) and the Covid-19 pandemic (~2020\u20132021)",
+  "indicators": [
+   "Real GDP growth, Kenya (annual %)",
+   "Real GDP growth, lower-middle-income countries (LMIC) aggregate (annual %)",
+   "Real GDP growth, upper-middle-income countries (UMIC) aggregate (annual %)",
+   "Real GDP growth, sub-Saharan Africa excluding high-income (SSA*) aggregate (annual %)"
+  ],
+  "geography": "Kenya vs LMIC, UMIC, SSA (excluding high-income) aggregates",
+  "time_span": "2001\u20132024, annual",
+  "source_note": "Source: World Development Indicators (WDI), World Bank. Note: LIC = low-income countries; LMIC = lower-middle-income countries; SSA = sub-Saharan African countries excluding high-income countries",
+  "data_sources": [
+   "WDI"
+  ],
+  "method": "Simple plot of annual real GDP growth rates (no transformation)",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "WDI indicator NY.GDP.MKTP.KD.ZG for KEN plus the aggregates LMC, UMC and SSA (Sub-Saharan Africa excluding high income). Add shaded bands for 2008\u20132009 and 2020\u20132021. The y-axis runs -6 to 14 in steps of 2 and is labelled 'Percent'; x-axis ticks are every 2 years from 2001 to 2023. Values depend on the WDI vintage because Kenya's GDP has been revised. The note defines LIC, but no LIC series is plotted.",
+  "key_values": [
+   "Kenya 2002 ~0.5%",
+   "Kenya 2008 ~0.2%",
+   "Kenya 2010 ~8.1% (peak)",
+   "Kenya 2020 ~-0.3%",
+   "Kenya 2021 ~7.6%",
+   "Kenya 2024 ~4.7%",
+   "UMIC 2007 ~9.4% (series max)",
+   "LMIC 2020 ~-3.0% (series min)",
+   "SSA 2016 ~1.2%",
+   "Text: Kenya average 4.6% over 2011\u20132024; 4.5% over 2001\u20132025"
+  ]
+ },
+ {
+  "label": "unnumbered (policy framework diagram)",
+  "pdf_page": 12,
+  "section": "1 Introduction",
+  "kind": "diagram",
+  "title": "A policy framework to rebalancing and reinvigorating economic growth in Kenya",
+  "chart_type": "conceptual network diagram: 4 coloured boxes linked by labelled two-way arrows, outer arcs, and a brace underneath labelled as the foundation",
+  "indicators": [
+   "Nodes: Fiscal Space (orange), Productivity Growth (teal), Climate Resilience (green), International Integration (purple); foundation: 'Transparent and efficient public institutions'",
+   "Fiscal Space -> Productivity Growth: 'Efficient public investment expands the PPF and finances productivity-enhancing enablers'",
+   "Productivity Growth -> Fiscal Space: 'Raises more fiscal revenues from productive firms'",
+   "Fiscal Space -> Climate Resilience: 'Increases resources for mitigation and adaptation'",
+   "Climate Resilience -> Fiscal Space: 'Reduces likelihood of unplanned spending pressures and revenue shortfalls'",
+   "Fiscal Space -> International Integration: 'Enables undistorted interest and exchange rates'",
+   "International Integration -> Fiscal Space: 'Creates FX flow to fund investments and pay for external liabilities'",
+   "International Integration -> Productivity Growth: 'Promotes competition and enables the transmission of knowhow through efficiency-seeking FDI and imports'",
+   "Productivity Growth -> International Integration: 'Raises exports due to more productive firms'",
+   "Climate Resilience -> International Integration: 'FX climate finance funds external accounts'",
+   "International Integration -> Climate Resilience: 'Brings inputs for resilience and mitigation'",
+   "Top outer arc: 'Builds resilience to shocks from firms and households'; bottom outer arc: 'Reduces volatility and limits destruction of capital'"
+  ],
+  "geography": "Kenya only",
+  "time_span": "n/a",
+  "source_note": "Source: World Bank Staff. PPF = Productive Possibility Frontier",
+  "data_sources": [
+   "World Bank staff"
+  ],
+  "method": "Conceptual framework; no data",
+  "data_level": "unknown",
+  "publicly_replicable": "yes",
+  "replication_notes": "Can be redrawn with a diagram tool (e.g., graphviz or matplotlib) from the transcribed node and edge labels. No data is needed.",
+  "key_values": [
+   "4 nodes, 10 directed labelled edges, 2 outer arcs, 1 foundation brace"
+  ]
+ },
+ {
+  "label": "Figure 2",
+  "pdf_page": 14,
+  "section": "2 Growth drivers during the last 20 years",
+  "kind": "chart",
+  "title": "Contributions to real value-added growth* (shared headline with Figure 3: Kenya's economic growth has been driven by the constant expansion of the services sector, at the same time the government sector expanded, and exports withdrew)",
+  "chart_type": "stacked bar chart by period, with positive and negative stacks",
+  "indicators": [
+   "Contribution to real value-added growth, percentage points, by sector: Agriculture, Manufacturing, Construction, Rest of industry, Services, FISM (financial intermediation services indirectly measured)",
+   "Period average total growth g shown in the category labels (%)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "Periods 2001-10 (g = 3.8%), 2011-19 (g = 4.6%), 2020 (g = 0.5%), 2021-24 (g = 5.1%)",
+  "source_note": "Source: Kenya National Bureau of Statistics, 2025. *Note: The growth decomposition is an approximation and individual growth rates may not add up to the total growth rate. Sectoral and expenditure growth rates are weighted by their average share in total value-added or GDP during the period. Exports and imports data is shown until 2023 and do not reflect revisions made in the Kenya Economic Survey 2025.",
+  "data_sources": [
+   "KNBS Economic Survey (national accounts, GDP by activity at constant prices)"
+  ],
+  "method": "Approximate sectoral growth decomposition: contribution = sector's average real growth over the period x its average share in total value added over the period",
+  "data_level": "sector",
+  "publicly_replicable": "yes",
+  "replication_notes": "Needs KNBS real value added by ISIC sector, 2001\u20132024 (Economic Survey or Statistical Abstract), with sectors grouped into agriculture, manufacturing, construction, rest of industry (mining, electricity, water), services and FISM. Average annual growth for each sector is multiplied by its average share in the period. Splicing across KNBS base revisions may be needed for 2001\u20132010. The y-axis runs -1 to 6 and is labelled 'Percentage points'. In the 2020 bar the readable stacks net to about +1.2 pp, but the label says g = 0.5%. Matching that label exactly may need the authors' exact vintage.",
+  "key_values": [
+   "2001-10: Agriculture ~0.40, Manufacturing ~0.47, Construction ~0.20, Rest of industry ~0.17, Services ~2.55 pp (bar top ~3.8)",
+   "2011-19: Agriculture ~0.55, Manufacturing ~0.29, Construction ~0.43, Rest of industry ~0.15, Services ~3.4, FISM ~-0.26 pp (bar top ~4.8)",
+   "2020: Agriculture ~0.96, Construction ~0.66, Rest of industry ~0.07, FISM ~+0.07, Manufacturing ~0, Services ~-0.57 pp",
+   "2021-24: Agriculture ~0.58, Manufacturing ~0.24, Construction ~0.12, Rest of industry ~0.07, Services ~4.3, FISM ~-0.16 pp (bar top ~5.3)",
+   "Text: services contributed over two-thirds of total real GDP growth before and after COVID-19"
+  ]
+ },
+ {
+  "label": "Figure 3",
+  "pdf_page": 14,
+  "section": "2 Growth drivers during the last 20 years",
+  "kind": "chart",
+  "title": "Real GDP growth by expenditure category (2011=100)*",
+  "chart_type": "multi-line index chart",
+  "indicators": [
+   "Private consumption, real, index 2011=100",
+   "Government consumption, real, index 2011=100",
+   "Investment (GCF), real, index 2011=100",
+   "Exports (G&S), real, index 2011=100",
+   "Imports (G&S), real, index 2011=100"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2011\u20132024 for consumption and investment; 2011\u20132023 for exports and imports",
+  "source_note": "Source: Kenya National Bureau of Statistics, 2025. *Note: The growth decomposition is an approximation and individual growth rates may not add up to the total growth rate. Sectoral and expenditure growth rates are weighted by their average share in total value-added or GDP during the period. Exports and imports data is shown until 2023 and do not reflect revisions made in the Kenya Economic Survey 2025.",
+  "data_sources": [
+   "KNBS Economic Survey (GDP by expenditure at constant prices)"
+  ],
+  "method": "Simple rebasing of constant-price expenditure components to 2011=100",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "Needs KNBS real GDP by expenditure component (private consumption, government consumption, gross capital formation, exports and imports of goods and services). WDI constant-LCU series can stand in: NE.CON.PRVT.KN, NE.CON.GOVT.KN, NE.GDI.TOTL.KN, NE.EXP.GNFS.KN, NE.IMP.GNFS.KN. Rebase each series to 2011=100. The y-axis runs 80 to 220 and is labelled 'Index (2011 = 100)'. Exports and imports stop at 2023 and come from the pre-Economic Survey 2025 vintage.",
+  "key_values": [
+   "Government consumption ~201 in 2023, ~199 in 2024",
+   "Private consumption ~178 in 2024",
+   "Investment (GCF) ~140 in 2014, ~173 in 2021, ~160 in 2023, ~171 in 2024",
+   "Exports ~82 in 2020 (trough), ~106 in 2022, ~101 in 2023",
+   "Imports ~105 in 2020, ~135 in 2022, ~131 in 2023"
+  ]
+ },
+ {
+  "label": "Figure 4",
+  "pdf_page": 15,
+  "section": "3 How was growth financed? A twin deficit story (figure sits at top of Section 3 page but relates to Section 2 growth drivers)",
+  "kind": "chart",
+  "title": "TFP, capital per worker, and GDP per worker Index (2001=100), Kenya",
+  "chart_type": "multi-line (smoothed lines), single axis",
+  "indicators": [
+   "TFP Index (index, 2001=100)",
+   "Capital per worker (index, 2001=100)",
+   "GDP per worker (index, 2001=100)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2001-2019 (annual)",
+  "source_note": "Source: Penn World Tables, 10.01.",
+  "data_sources": [
+   "Penn World Table 10.01"
+  ],
+  "method": "Simple rebasing of PWT series to 2001=100; capital per worker = capital stock / employment; GDP per worker = real GDP / employment",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "PWT 10.01 variables likely rtfpna (TFP at constant national prices), rnna (capital stock at constant 2017 national prices), rgdpna (real GDP at constant national prices), emp (persons engaged). Divide rnna and rgdpna by emp and rebase all three to 2001=100. Lines are drawn with Excel-style smoothing. PWT 10.01 ends in 2019, which is why the series stops there. Y-axis 80-140, x ticks every 3 years.",
+  "key_values": [
+   "All three series = 100 in 2001",
+   "Capital per worker ~136 in 2019",
+   "GDP per worker ~135-136 in 2019",
+   "TFP ~104 in 2019; TFP dips to ~97 around 2008",
+   "GDP per worker local peak ~109-110 in 2007"
+  ]
+ },
+ {
+  "label": "Figure 5",
+  "pdf_page": 15,
+  "section": "3 How was growth financed? A twin deficit story (figure sits at top of Section 3 page but relates to Section 2 growth drivers)",
+  "kind": "chart",
+  "title": "Contributions to potential GDP, Kenya and peers (2000-2022)",
+  "chart_type": "stacked bar (positive/negative stacking) with dot overlay",
+  "indicators": [
+   "Capital Stock contribution (percentage points)",
+   "Labor contribution (percentage points)",
+   "Total Factor Productivity contribution (percentage points)",
+   "Real GDP (dot, percent / percentage points)"
+  ],
+  "geography": "Kenya vs Bangladesh, Ethiopia, Ghana, Indonesia, India, Malaysia, Nigeria, South Africa, Tanzania",
+  "time_span": "2000-2022 (period average)",
+  "source_note": "Source: World Bank, 2023a.",
+  "data_sources": [
+   "World Bank 2023a (likely World Bank potential growth / long-term growth prospects database, production-function approach; exact reference in bibliography, not on these pages)"
+  ],
+  "method": "Growth accounting decomposition of (potential) GDP growth into capital, labor and TFP contributions, averaged over 2000-2022; dot approximately equals the sum of the three components",
+  "data_level": "model output",
+  "publicly_replicable": "partly",
+  "replication_notes": "Needs the World Bank 2023a source (probably the potential growth database behind 'Falling Long-Term Growth Prospects', Kose & Ohnsorge eds. 2023) or an own Cobb-Douglas growth accounting (e.g., PWT capital, employment, labor share ~0.6) averaged 2000-2022. It is not clear whether the dot is actual real GDP growth or potential growth; dots are close to the sum of components. Y-axis label 'Percentage points', range -4 to 12. Image is low resolution; values read approximately.",
+  "key_values": [
+   "Kenya: capital ~3.4, labor ~1.5, TFP ~-0.6, real GDP dot ~4.3",
+   "Ethiopia: capital ~9.1, labor ~1.4, TFP ~-3.2, dot ~7.3",
+   "Bangladesh: capital ~4.6, labor ~0.7, TFP ~1.1, dot ~6.4",
+   "Tanzania: capital ~5.5, labor ~1.1, TFP ~-1.6, dot ~4.9",
+   "South Africa: capital ~0.9, labor ~0.5, TFP ~-0.9, dot ~0.6",
+   "Ghana: capital ~1.4, labor ~1.1, TFP ~2.1, dot ~4.6",
+   "India: capital ~2.0, labor ~0.7, TFP ~2.1, dot ~4.9"
+  ]
+ },
+ {
+  "label": "Figure 6",
+  "pdf_page": 16,
+  "section": "3 How was growth financed? A twin deficit story",
+  "kind": "chart",
+  "title": "Government and Nongovernment Investment, and Current Account Deficit as a Percentage of Gross Domestic Product, FY2006/07\u20132019/20",
+  "chart_type": "dual-axis line chart (dashed and solid lines)",
+  "indicators": [
+   "Non-government investment (% of GDP, lhs, dashed)",
+   "Current account deficit (% of GDP, lhs)",
+   "Government investment (% of GDP, rhs)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "FY2005/06-2019/20 on axis (title says FY2006/07-2019/20); CA deficit in calendar years",
+  "source_note": "Source: IMF, from Article 4s. Note: The current account deficit is in calendar years, for example, 2005/06 = 2005.",
+  "data_sources": [
+   "IMF Article IV staff reports (Kenya)"
+  ],
+  "method": "Simple ratios to GDP, compiled from successive IMF Article IV reports",
+  "data_level": "macro",
+  "publicly_replicable": "partly",
+  "replication_notes": "Investment split comes from tables in IMF Article IV staff reports, which have to be extracted by hand from several report vintages. Proxies: government investment from National Treasury development spending or WEO; non-government = total GFCF (WDI/KNBS) minus government; CA deficit from WEO/IFS (calendar year mapped to FY start year). LHS 0-18, RHS 0-10. Title start year (2006/07) does not match the axis (starts 2005/06, 15 points).",
+  "key_values": [
+   "Government investment (rhs) ~4.3 in 2005/06, peak ~9.2 in 2011/12, ~8.4 in 2016/17, ~5.7 in 2019/20",
+   "Non-government investment ~13.8 in 2005/06, spike ~17 in 2015/16, low ~8.7 in 2018/19",
+   "CA deficit ~1.0 (2005), peak ~9.3 (2014), ~5.2 (2019)"
+  ]
+ },
+ {
+  "label": "Figure 7",
+  "pdf_page": 16,
+  "section": "3 How was growth financed? A twin deficit story",
+  "kind": "chart",
+  "title": "Government fiscal accounts, 2006-2024",
+  "chart_type": "combo: bars (fiscal balance) + lines (revenues, expenditures, primary balance)",
+  "indicators": [
+   "Fiscal balance (% of GDP, bars)",
+   "Revenues (% of GDP)",
+   "Expenditures (% of GDP)",
+   "Primary balance (% of GDP)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2006-2024 (annual)",
+  "source_note": "Source: IMF World Economic Outlook.",
+  "data_sources": [
+   "IMF WEO"
+  ],
+  "method": "Simple ratios (WEO general government series as % of GDP)",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "WEO codes likely GGR_NGDP (revenue), GGX_NGDP (total expenditure), GGXCNL_NGDP (net lending/borrowing = fiscal balance), GGXONLB_NGDP (primary net lending/borrowing). The WEO vintage matters; Kenya fiscal data are on a fiscal-year basis in WEO. Y-axis -10 to 40. A stray, cut-off duplicate 'Percent of GDP' axis label shows at the left edge (layout artifact).",
+  "key_values": [
+   "Revenues ~17% of GDP throughout (~16.5-18)",
+   "Expenditures ~17.3 (2006) rising to peak ~25.3 (2016), ~22.8 (2024)",
+   "Fiscal balance ~-0.5 (2006), trough ~-8.1 (2020), ~-5.6 (2024)",
+   "Primary balance ~+1.3 (2006), ~-4.8 (2016), ~-0.4 (2024)"
+  ]
+ },
+ {
+  "label": "Figure 8",
+  "pdf_page": 17,
+  "section": "3 How was growth financed? A twin deficit story",
+  "kind": "chart",
+  "title": "Government investment and fiscal deficit, 2008/09-2024/25",
+  "chart_type": "two-line chart",
+  "indicators": [
+   "Development spending (% of GDP)",
+   "Fiscal deficit (% of GDP, positive = deficit)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "FY2008/09-FY2024/25",
+  "source_note": "Source: National Treasury.",
+  "data_sources": [
+   "National Treasury of Kenya"
+  ],
+  "method": "Simple ratios to GDP (fiscal year)",
+  "data_level": "macro",
+  "publicly_replicable": "partly",
+  "replication_notes": "National Treasury fiscal outturns (e.g., Budget Review and Outlook Paper, Quarterly Economic and Budgetary Review, Budget Policy Statement annex tables) plus fiscal-year nominal GDP (KNBS/Treasury). These are public, but they have to be compiled by hand from PDF/Excel annexes. Exhibit headline above Figs 8-9: 'Expansionary fiscal policies to support public investment and devolution contributed to growing fiscal deficit and debt'. Y-axis 0-9.",
+  "key_values": [
+   "Development spending ~5.5 (2008/09), ~7.9 (2014/15), ~7.9 (2016/17), ~3.1 (2023/24), ~3.5 (2024/25)",
+   "Fiscal deficit ~4.0 (2008/09), low ~3.1 (2010/11), peak ~8.1 (2016/17), ~7.5 (2019/20-2020/21), ~5.2 (2023/24), ~5.8 (2024/25)"
+  ]
+ },
+ {
+  "label": "Figure 9",
+  "pdf_page": 17,
+  "section": "3 How was growth financed? A twin deficit story",
+  "kind": "chart",
+  "title": "Interest payments (% of revenues) and government gross debt (% of GDP), 2022",
+  "chart_type": "scatter (cross-country 2022) with linear fit line, Kenya trajectory overlay (connected dashed diamonds) and labeled peer points",
+  "indicators": [
+   "Interest payments (% of revenues), y-axis",
+   "Government gross debt (% of GDP), x-axis"
+  ],
+  "geography": "Global sample of 93 countries (2022); Kenya (2014, 2019, 2023, 2024); peers Ghana (2020), Zambia (2021)",
+  "time_span": "2022 cross-section; Kenya 2014-2024",
+  "source_note": "Source: World Bank World Development Indicators and IMF World Economic Outlooks. Note: Global sample of 93 countries with available data for 2022.",
+  "data_sources": [
+   "WDI",
+   "IMF WEO"
+  ],
+  "method": "Cross-country scatter with OLS linear fit (Stata-style graph)",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "WDI GC.XPN.INTP.RV.ZS (interest payments, % of revenue) and WEO GGXWDG_NGDP (general government gross debt, % of GDP). Sample = countries with both values for 2022 (93). Kenya's 2023-2024 interest/revenue may come from WEO or IMF rather than WDI (WDI coverage lags), so the exact source is unclear. Legend: Kenya (red dashed diamonds), Peers (navy dots), All countries 2022 (light-blue dots). X-axis 0-250, y-axis 0-50.",
+  "key_values": [
+   "Kenya 2014: debt ~41%, interest ~13% of revenues",
+   "Kenya 2019: debt ~59%, interest ~23%",
+   "Kenya 2023: debt ~73%, interest ~30%",
+   "Kenya 2024: debt ~70%, interest ~28%",
+   "Ghana (2020): debt ~92%, interest ~47%",
+   "Zambia (2021): debt ~111%, interest ~27%",
+   "Fit line from ~4% at debt ~5% to ~19% at debt ~178%"
+  ]
+ },
+ {
+  "label": "Figure 10",
+  "pdf_page": 18,
+  "section": "3 How was growth financed? A twin deficit story",
+  "kind": "chart",
+  "title": "Current account, 2006\u20132024",
+  "chart_type": "stacked bar (positive/negative) with dashed line overlay",
+  "indicators": [
+   "Goods and services balance (% of GDP)",
+   "Primary Income balance (% of GDP)",
+   "Secondary Income balance (% of GDP)",
+   "Current account (% of GDP, dashed line)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2006-2024 (annual)",
+  "source_note": "Source: International Financial Statistics, IMF. * Note: Revisions from IFS",
+  "data_sources": [
+   "IMF IFS (Balance of Payments)"
+  ],
+  "method": "Simple ratios to GDP; CA = sum of components",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "IMF BOP/IFS (BPM6) goods and services balance, primary income, secondary income and current account in USD, divided by nominal GDP in USD (WEO or WDI). It is not clear what the 'Revisions from IFS' note means. Exhibit headline above Figs 10-11: 'While exports grew little, imports grew as they become relatively cheaper through the last two decades'. Y-axis -20 to 10. The dashed CA line is slightly offset from the bar centers.",
+  "key_values": [
+   "Goods & services balance trough ~-13.2 to -13.7 in 2011/2014 (text: -13.2% in 2014)",
+   "Goods & services ~-5.8 in 2024",
+   "Secondary income ~4.2-6.4 (peak ~6.4 in 2023)",
+   "Primary income ~-2.0 in 2017 (text: 2.1% debits)",
+   "Current account ~-9.2 in 2014 (trough), ~-2 at end of period"
+  ]
+ },
+ {
+  "label": "Figure 11",
+  "pdf_page": 18,
+  "section": "3 How was growth financed? A twin deficit story",
+  "kind": "chart",
+  "title": "Real effective exchange rate index, Jan. 2005\u2013Jun. 2025 (Dec. 2007 = 100)",
+  "chart_type": "line (monthly)",
+  "indicators": [
+   "Real effective exchange rate index (Dec. 2007 = 100; axis label 'Index (2007=100)')"
+  ],
+  "geography": "Kenya only (vs 120 trading partners)",
+  "time_span": "Jan 2005 - Jun 2025 (monthly)",
+  "source_note": "Source: Bruegel. Note: REER is based on 120 trading partners. An increase in the index indicates an appreciation of Kenya's currency compared with the basket of trading partners currencies.",
+  "data_sources": [
+   "Bruegel REER database"
+  ],
+  "method": "Index rebasing (Dec 2007=100) of CPI-based REER",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "Download the Bruegel REER database (Darvas), monthly, 120 trading partners, CPI-based, Kenya column. Rebase to Dec 2007 = 100. The y-axis label says '2007=100' but the title says Dec. 2007=100. Y-axis 60-180.",
+  "key_values": [
+   "~68 in Jan 2005",
+   "~100 around Dec 2007",
+   "~113 mid-2008 spike; ~95 trough late 2011",
+   "Peak ~165 around early 2020",
+   "Trough ~122 around early 2024",
+   "~148 in Jun 2025"
+  ]
+ },
+ {
+  "label": "Figure 12",
+  "pdf_page": 18,
+  "section": "3 How was growth financed? A twin deficit story",
+  "kind": "chart",
+  "title": "Net Foreign Direct Investment, 2006-2024",
+  "chart_type": "vertical bar",
+  "indicators": [
+   "Net foreign direct investment (% of GDP; positive = net inflow)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2006-2024 (annual)",
+  "source_note": "Source: International Financial Statistics, IMF.",
+  "data_sources": [
+   "IMF IFS (Balance of Payments)"
+  ],
+  "method": "Simple ratio to GDP (net FDI = liabilities minus assets, sign set so inflow positive)",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "IMF BOP financial account direct investment (net incurrence of liabilities minus net acquisition of assets) divided by USD GDP. The BPM6 sign convention has to be flipped. Exhibit headline above Figs 12-13: 'With little FDI and portfolio investments to support the current account deficit, other debt instrument investments were the main financing source of the balance of payments'. Y-axis -1.0 to 3.5.",
+  "key_values": [
+   "2007 ~1.9",
+   "2011 ~2.9 (peak)",
+   "2012 ~2.0",
+   "2017 ~1.5",
+   "2020 ~-0.4, 2021 ~-0.35",
+   "2024 ~0.0"
+  ]
+ },
+ {
+  "label": "Figure 13",
+  "pdf_page": 18,
+  "section": "3 How was growth financed? A twin deficit story",
+  "kind": "chart",
+  "title": "Balance of payments (percent of GDP), 2006-2024",
+  "chart_type": "stacked bar (positive/negative), bars sum to zero",
+  "indicators": [
+   "Current account (% of GDP)",
+   "Capital account (% of GDP)",
+   "FDI (net) (% of GDP)",
+   "Portfolio Investments (net) (% of GDP)",
+   "Other F.Acc. (other financial account/other investment, % of GDP)",
+   "Net errors and omissions (% of GDP)",
+   "Reserves (+ loss, - gain) (% of GDP)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2006-2024 (annual)",
+  "source_note": "Source: International Financial Statistics, IMF.",
+  "data_sources": [
+   "IMF IFS (Balance of Payments)"
+  ],
+  "method": "BOP identity decomposition: CA + KA + financial flows (sign-reversed so net inflows positive) + NEO + reserve change = 0, scaled by GDP",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "Needs BPM6 BOP components from IMF (IFS/BOP dataset) and USD GDP. Flip the financial account signs so net inflows are positive, and show reserves with + = loss, - = gain so that each year sums to zero. Small text, but legible at zoom. Y-axis -15 to 15.",
+  "key_values": [
+   "2014: CA ~-9.3, portfolio ~+5.5 (Eurobond year), other F.Acc ~+4.3, FDI ~+1.1, reserves ~-2.0",
+   "2011: CA ~-8.2, other F.Acc ~+4.5, FDI ~+2.9, reserves ~+2.6, NEO ~-2.3",
+   "2012: other F.Acc ~+7.5",
+   "2024: CA ~-1.3, reserves ~-1.2"
+  ]
+ },
+ {
+  "label": "Figure 14",
+  "pdf_page": 19,
+  "section": "3 How was growth financed? A twin deficit story",
+  "kind": "chart",
+  "title": "Domestic credit to the private sector (percent of GDP), 2023",
+  "chart_type": "scatter vs log GDP per capita with fitted (quadratic/exponential) curve; Kenya highlighted",
+  "indicators": [
+   "Domestic credit to private sector (% of GDP), y-axis",
+   "GDP per capita PPP, logs (constant 2017 international USD), x-axis"
+  ],
+  "geography": "Global cross-section; Kenya highlighted",
+  "time_span": "2023",
+  "source_note": "Source: WDI.",
+  "data_sources": [
+   "WDI"
+  ],
+  "method": "Cross-country scatter with nonlinear (likely quadratic, Stata qfit) fitted line",
+  "data_level": "macro",
+  "publicly_replicable": "partly",
+  "replication_notes": "WDI FS.AST.PRVT.GD.ZS (2023) vs ln(NY.GDP.PCAP.PP.KD). The axis says constant 2017 international $, but current WDI uses 2021 PPP, so an archived WDI vintage is needed (or accept small differences). The fit form is not stated (convex curve from ~15 at log 6.7 to ~121 at log 11.8). Sample size not stated. Y-axis 0-250, x-axis 7-12.",
+  "key_values": [
+   "Kenya: log GDP pc PPP ~8.65, credit ~31.6% of GDP (below fitted curve ~35-38)",
+   "Fitted curve ~15 at x=6.7, ~121 at x=11.8",
+   "Max outlier ~249% at log ~11.1"
+  ]
+ },
+ {
+  "label": "Figure 15",
+  "pdf_page": 19,
+  "section": "3 How was growth financed? A twin deficit story",
+  "kind": "chart",
+  "title": "Domestic Credit to the private sector, Kernel distribution",
+  "chart_type": "kernel density curves (two years) with vertical reference lines for Kenya",
+  "indicators": [
+   "Kernel density of domestic credit to private sector (% of GDP), 2001",
+   "Kernel density, 2023",
+   "Kenya 2001 value (dashed vertical line)",
+   "Kenya 2023 value (dotted vertical line)"
+  ],
+  "geography": "Sample of 104 countries; Kenya marked",
+  "time_span": "2001 vs 2023",
+  "source_note": "Source: WDI. *Sample of 104 countries. (In-chart note: *Distribution truncated at 150 percent of GDP)",
+  "data_sources": [
+   "WDI"
+  ],
+  "method": "Kernel density estimation (Stata kdensity style) on a balanced 104-country sample, truncated at 150% of GDP; text reports Kenya's percentile rank",
+  "data_level": "macro",
+  "publicly_replicable": "partly",
+  "replication_notes": "WDI FS.AST.PRVT.GD.ZS for 2001 and 2023, countries with both years (104), drop values >150. The kernel and bandwidth are not stated (Stata default Epanechnikov is likely). Percentile ranks (48th in 2001, 38th in 2023) can be computed from the same sample. Y-axis 0-.015, x-axis 0-150.",
+  "key_values": [
+   "Kenya 2001 line at ~25% of GDP",
+   "Kenya 2023 line at ~31.6% of GDP",
+   "2001 density mode ~17% (density ~.0137)",
+   "2023 density mode ~28% (density ~.0125)",
+   "Kenya percentile: 48th (2001) vs 38th (2023) per text"
+  ]
+ },
+ {
+  "label": "Figure 16",
+  "pdf_page": 21,
+  "section": "4 Unpacking the constraints and the way forward - A. Fiscal constraints",
+  "kind": "chart",
+  "title": "Reserves and import coverage, Jan. 2022 \u2013 Jul. 2026 (end of month)",
+  "chart_type": "dual-axis combo: bars (reserves) + line (import cover) + dashed horizontal line (4-month requirement)",
+  "indicators": [
+   "Official reserves (million US$, lhs)",
+   "Import cover (months, rhs)",
+   "Minimum import cover requirement (4.0 months, dashed)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "Axis shows Jan-23 to Jun-26 monthly (42 months); title says Jan 2022 - Jul 2026",
+  "source_note": "Source: Central Bank of Kenya.",
+  "data_sources": [
+   "Central Bank of Kenya"
+  ],
+  "method": "Raw series (end-of-month usable official reserves and months of import cover)",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "CBK publishes usable official foreign exchange reserves and months of import cover (weekly bulletin / forex reserves data page). Take end-of-month values. The title period does not match the axis (Jan-23 to Jun-26). X-axis labels after Dec-24 read 'Jan-24', 'Feb-24' again (should be Jan-25, Feb-25). The right axis title is cut off/illegible. The chart is a pasted low-resolution image.",
+  "key_values": [
+   "Jan-23: ~7,800 US$m, ~4.4 months",
+   "May-Jul 2023: ~6,400-6,500 US$m, ~3.6 months",
+   "Feb-24: ~6,600 US$m, ~3.5 months (low)",
+   "Jun-24: ~7,800 US$m, ~4.1 months",
+   "Dec-24: ~9,200 US$m, ~4.7 months",
+   "Mar-26: ~14,000 US$m, ~6.0 months (peak)",
+   "Jun-26: ~13,150 US$m, ~5.6 months"
+  ]
+ },
+ {
+  "label": "Figure 17",
+  "pdf_page": 21,
+  "section": "4 Unpacking the constraints and the way forward - A. Fiscal constraints",
+  "kind": "chart",
+  "title": "Kenya Treasury Yield Curve (percent)",
+  "chart_type": "multi-line yield curves by maturity (4 dates)",
+  "indicators": [
+   "Yield (percent) by maturity on October 11, 2024",
+   "Yield on December 31, 2023",
+   "Yield on June 30, 2023",
+   "Yield on December 31, 2022"
+  ],
+  "geography": "Kenya only",
+  "time_span": "Snapshots: 31 Dec 2022, 30 Jun 2023, 31 Dec 2023, 11 Oct 2024; maturities 91-day to 25 years",
+  "source_note": "Source: IMF (October 2024).",
+  "data_sources": [
+   "IMF (October 2024) staff report; underlying data likely NSE/CBK government securities yield curve"
+  ],
+  "method": "Raw yield curves at selected dates",
+  "data_level": "macro",
+  "publicly_replicable": "partly",
+  "replication_notes": "The chart is copied from an IMF Oct 2024 document. Rebuilding it needs the Kenya government securities yield curve on the four dates (NSE zero-coupon yield curve or CBK T-bill/bond yields), and historical daily curves may sit behind a subscription. The image is very low resolution: the y-axis title is illegible and values are approximate. X-axis: 91-day, 182-day, 1-year, then 2-25 years.",
+  "key_values": [
+   "Dec 31, 2022: ~9.3% (91-day) rising to ~13.6% (6y) and ~14.2% (25y)",
+   "Jun 30, 2023: ~11.9% (91-day), ~14.2% (3y), ~15.0% (25y)",
+   "Dec 31, 2023: ~16.0% short end, inverted hump ~18% at 2-4y, ~15.7% at 9-17y, ~16.1% at 24y",
+   "Oct 11, 2024: ~15.0% (91-day), ~16.9% (2y), dip ~15.6% (12y), ~15.4% (21y), ~16.1% (23y)"
+  ]
+ },
+ {
+  "label": "Figure 18",
+  "pdf_page": 22,
+  "section": "4 Unpacking the constraints and the way forward - A. Fiscal constraints",
+  "kind": "chart",
+  "title": "Ordinary Revenues (percent of GDP), 2016/17 \u2013 2024/25",
+  "chart_type": "stacked bar with data labels",
+  "indicators": [
+   "Income tax (% of GDP)",
+   "VAT (% of GDP)",
+   "Import Duty (% of GDP)",
+   "Excise Duty (% of GDP)",
+   "Other Revenues (% of GDP)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "FY2016/17-FY2024/25",
+  "source_note": "Source: National Treasury of Kenya.",
+  "data_sources": [
+   "National Treasury of Kenya"
+  ],
+  "method": "Simple ratios to GDP (fiscal year)",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "Revenue outturns by tax head from National Treasury (BROP, QEBR, Budget Statements annex tables) divided by fiscal-year nominal GDP. Data labels are fully legible and make exact replication targets. Bars, in order 2016/17-2024/25: Income tax 7.7, 7.2, 7.0, 6.7, 6.1, 6.9, 6.6, 6.4, 6.5; VAT 4.2, 4.0, 4.2, 3.6, 3.6, 4.1, 3.9, 4.0, 3.5; Import duty 1.1, 1.1, 1.1, 0.9, 1.0, 0.9, 0.9, 0.8, 0.9; Excise 2.0, 1.9, 2.0, 1.8, 1.9, 2.0, 1.9, 1.7, 1.7; Other 1.1, 1.2, 1.0, 1.8, 1.2, 1.2, 1.0, 1.2, 1.5.",
+  "key_values": [
+   "Total 2016/17 = 16.1% of GDP (7.7+4.2+1.1+2.0+1.1)",
+   "Total 2020/21 = 13.8%",
+   "Total 2024/25 = 14.1% (6.5+3.5+0.9+1.7+1.5)",
+   "Income tax falls from 7.7 (2016/17) to 6.5 (2024/25)"
+  ]
+ },
+ {
+  "label": "Figure 19",
+  "pdf_page": 22,
+  "section": "4 Unpacking the constraints and the way forward - A. Fiscal constraints",
+  "kind": "chart",
+  "title": "Government Expenditures (percent of GDP), 2015/16 \u2013 2023/24",
+  "chart_type": "stacked bar with data labels",
+  "indicators": [
+   "Wages (% of GDP)",
+   "Interest payments (% of GDP)",
+   "Operations & maintenance (% of GDP)",
+   "Development (% of GDP)",
+   "Transfer to Counties (% of GDP)",
+   "Others (% of GDP)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "Axis labels FY2016/17-FY2024/25 (9 bars); title says 2015/16-2023/24",
+  "source_note": "Source: National Treasury of Kenya.",
+  "data_sources": [
+   "National Treasury of Kenya"
+  ],
+  "method": "Simple ratios to GDP (fiscal year), by economic classification",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "National Treasury expenditure outturns by category divided by FY nominal GDP. The title period does not match the axis labels; the body text (development 7.9% in FY2016/17 to 3.5% in FY2024/25) matches the axis labels. Data labels are legible. Bars in order: Wages 4.2, 4.4, 4.3, 4.2, 4.3, 4.1, 3.8, 3.6, 3.6; Interest 3.4, 3.6, 3.9, 4.1, 4.4, 4.5, 4.8, 5.2, 5.7; O&M 5.7, 6.0, 6.4, 6.4, 6.1, 6.8, 6.3, 5.1, 4.9; Development 7.9, 5.3, 5.6, 5.7, 4.9, 4.2, 3.5, 3.7, 3.5; Transfers to counties 3.8, 3.7, 3.7, 3.1, 3.5, 2.8, 2.9, 2.2, 2.6; Others 1.3, 1.2, 1.2, 1.2, 1.4, 1.3, 1.3, 2.8, 2.9. The legend misspells 'mantainance'.",
+  "key_values": [
+   "Total first bar (2016/17) = 26.3% of GDP",
+   "Total last bar (2024/25) = 23.2% of GDP",
+   "Development 7.9 -> 3.5",
+   "Interest payments 3.4 -> 5.7"
+  ]
+ },
+ {
+  "label": "Figure 20",
+  "pdf_page": 24,
+  "section": "4A Fiscal constraints",
+  "kind": "chart",
+  "title": "Real government consumption and Real Effective Exchange Rate Index (2007 = 100). Group headline above Figs 20-21: 'Increases in government consumption came with real exchange rate appreciation and increased interest rates, which seem to have further tolled private sector's competitiveness'",
+  "chart_type": "scatter with year-labelled points and two period-specific fitted lines (dashed 2001-2010; long-dash-dot 2011-2019), Stata style",
+  "indicators": [
+   "X: Real government consumption, index 2007=100",
+   "Y: REER, index 2007=100"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2001-2019 (annual)",
+  "source_note": "Sources: Bruegel and Kenya National Bureau of Statistics.",
+  "data_sources": [
+   "Bruegel REER database",
+   "KNBS national accounts (real government final consumption)"
+  ],
+  "method": "Rebase both series to 2007=100; scatter; separate fitted curves for 2001-2010 and 2011-2019 (curve type not stated, look like quadratic/linear fits, e.g. Stata qfit/lfit)",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "Bruegel REER (annual, Kenya, broad basket; which basket not stated) rebased to 2007; real gov consumption from KNBS or WDI NE.CON.GOVT.KN rebased to 2007. Fit type for the two lines must be assumed. Labels for 2001-2004 overlap and are partly illegible.",
+  "key_values": [
+   "2007: (100, 100)",
+   "2011: gov cons ~116, REER ~99",
+   "2012: ~132, ~114",
+   "2015: ~152, ~130",
+   "2018: ~182, ~144",
+   "2019: gov cons ~192, REER ~153",
+   "2001-2002: gov cons ~88-89, REER ~81"
+  ]
+ },
+ {
+  "label": "Figure 21",
+  "pdf_page": 24,
+  "section": "4A Fiscal constraints",
+  "kind": "chart",
+  "title": "Private and Government Credit (% of Gross Domestic Product), 2010 (Q1) to 2023 (Q4)",
+  "chart_type": "scatter with curved dotted trendline (Excel-style) and R-squared label",
+  "indicators": [
+   "X: Net government credit, % of GDP",
+   "Y: Private sector credit, % of GDP"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2010Q1-2023Q4 (quarterly, ~56 points)",
+  "source_note": "Sources: Bruegel and Kenya National Bureau of Statistics. (single source line placed under Fig 20; no separate source printed for Fig 21)",
+  "data_sources": [
+   "Central Bank of Kenya monetary survey (likely; not stated)",
+   "KNBS quarterly GDP",
+   "Bruegel/KNBS per printed shared source line"
+  ],
+  "method": "Simple ratio to GDP; scatter with nonlinear (likely logarithmic or power) trendline, R\u00b2 = 0.5411 (crowding-out illustration)",
+  "data_level": "macro",
+  "publicly_replicable": "partly",
+  "replication_notes": "Need quarterly domestic credit split (net credit to government, credit to private sector) from CBK monetary survey and quarterly nominal GDP (KNBS QGDP, probably annualized/rolling 4Q). Ratio denominator convention and trendline functional form not stated; printed source (Bruegel, KNBS) does not obviously cover credit data.",
+  "key_values": [
+   "R\u00b2 = 0.5411",
+   "X range ~5.7 to ~15.3% of GDP",
+   "Y range ~23.3 to ~32.1% of GDP",
+   "Leftmost point ~ (5.7, 30.4); lowest point ~ (15.3, 23.3)"
+  ]
+ },
+ {
+  "label": "Figure 22",
+  "pdf_page": 25,
+  "section": "4B External constraints",
+  "kind": "chart",
+  "title": "Exports (percent of GDP) and GDP per capita (PPP), 2024. Group headline: 'Kenya seems to have limited global integration in terms of exports and FDI'",
+  "chart_type": "cross-country scatter vs log GDP per capita with fitted curve; Kenya points for 2011, 2015, 2024 highlighted; peers labelled",
+  "indicators": [
+   "Y: Exports of goods and services, percent of GDP",
+   "X: GDP per capita PPP, logs (constant 2017 international USD)"
+  ],
+  "geography": "Kenya (2011, 2015, 2024) vs peers 2024 (Vietnam, Malaysia, Ghana, Rwanda, SSA, LIC, LMIC, UMIC, South Africa, Indonesia, Tanzania, Bangladesh, Ethiopia) and all countries 2024",
+  "time_span": "2024 (Kenya also 2011, 2015)",
+  "source_note": "Sources: WDI. *Note: Countries with below 100 percent of exports to GDP ratio.",
+  "data_sources": [
+   "WDI"
+  ],
+  "method": "Cross-country scatter; sample restricted to exports/GDP < 100%; fitted curve across all countries (appears quadratic/exponential in log GDP pc)",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "WDI NE.EXP.GNFS.ZS and NY.GDP.PCAP.PP.KD (2017 PPP vintage; current WDI uses 2021 PPP so vintage matters); natural log of GDP pc; filter <100%; fit form must be assumed.",
+  "key_values": [
+   "Kenya 2011 ~21-22% at log GDPpc ~8.37",
+   "Kenya 2015 ~15% at ~8.45",
+   "Kenya 2024 ~17% at ~8.68",
+   "Vietnam ~90%",
+   "Malaysia ~71%",
+   "Ethiopia ~5%",
+   "Bangladesh ~10%",
+   "Fitted curve ~20% at x=7 rising to ~61% at x=11.6"
+  ]
+ },
+ {
+  "label": "Figure 23",
+  "pdf_page": 25,
+  "section": "4B External constraints",
+  "kind": "chart",
+  "title": "FDI inflows (averages 2011-2019 and 2021-2023), percent of GDP",
+  "chart_type": "grouped (clustered) bar, two periods, value labels",
+  "indicators": [
+   "Foreign direct investment, net inflows, percent of GDP, period averages"
+  ],
+  "geography": "Kenya vs Bangladesh, South Africa, Indonesia, Tanzania, Rwanda, Malaysia, Ethiopia, Ghana, LMIC, SSA (excl. HIC), UMIC",
+  "time_span": "2011-2019 avg and 2021-2023/2024 avg (title says 2021-2023; legend says 2021 - 2024)",
+  "source_note": "Sources: WDI. (shared source line under Figs 22-23)",
+  "data_sources": [
+   "WDI"
+  ],
+  "method": "Simple period averages of FDI/GDP",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "WDI BX.KLT.DINV.WD.GD.ZS; aggregates LMIC, SSA excl. HIC, UMIC from WDI. Resolve period inconsistency (2021-2023 in title vs 2021-2024 in legend).",
+  "key_values": [
+   "Kenya 1.4 / 0.5",
+   "Bangladesh 1.1 / 0.3",
+   "South Africa 1.1 / 3.4",
+   "Indonesia 2.1 / 1.7",
+   "Tanzania 2.9 / 2.0",
+   "Rwanda 2.9 / 2.9",
+   "Malaysia 3.3 / 3.7",
+   "Ethiopia 3.5 / 3.0",
+   "Ghana 6.2 / 2.2",
+   "LMIC 1.9 / 1.6",
+   "SSA (excl. HIC) 2.1 / 2.2",
+   "UMIC 2.3 / 1.4"
+  ]
+ },
+ {
+  "label": "Figure 24",
+  "pdf_page": 26,
+  "section": "4B External constraints",
+  "kind": "chart",
+  "title": "Share of EU agricultural imports, 2002-2021",
+  "chart_type": "multi-line",
+  "indicators": [
+   "Share of EU agricultural imports by supplier country (percent, axis unlabelled)"
+  ],
+  "geography": "Kenya (KEN) vs Morocco (MAR), Peru (PER), South Africa (ZAF), Ecuador (ECU)",
+  "time_span": "2002-2021 (annual)",
+  "source_note": "Source: World Bank 2023d.",
+  "data_sources": [
+   "World Bank 2023d (Kenya Trade Integration report)",
+   "underlying EU trade data (Eurostat Comext or UN Comtrade, not stated)"
+  ],
+  "method": "Simple share: country exports to EU of agricultural products / total EU agricultural imports",
+  "data_level": "macro",
+  "publicly_replicable": "partly",
+  "replication_notes": "Requires EU import data by partner (Eurostat Comext or UN Comtrade/BACI), definition of agricultural products (e.g., HS 01-24) and whether denominator is extra-EU or total imports; EU membership composition (EU27/EU28) unspecified.",
+  "key_values": [
+   "KEN ~1.1 (2002) -> ~0.63 (2021)",
+   "MAR ~2.07 -> ~2.85",
+   "PER ~1.0 -> ~2.1",
+   "ZAF ~2.68 -> ~1.66",
+   "ECU ~1.7 -> ~2.02"
+  ]
+ },
+ {
+  "label": "Figure 25",
+  "pdf_page": 26,
+  "section": "4B External constraints",
+  "kind": "chart",
+  "title": "Number of agricultural products over US$ 10 million exported to the EU",
+  "chart_type": "horizontal grouped bar (2021 vs 2002) with value labels",
+  "indicators": [
+   "Count of agricultural products with exports to EU > US$10 million"
+  ],
+  "geography": "Kenya vs Morocco, South Africa, Peru, Ecuador",
+  "time_span": "2002 and 2021",
+  "source_note": "Source: World Bank 2023d. (shared source line under Figs 24-25)",
+  "data_sources": [
+   "World Bank 2023d",
+   "underlying EU trade data (not stated)"
+  ],
+  "method": "Count of products (product classification level not stated, likely HS6) above US$10m threshold",
+  "data_level": "macro",
+  "publicly_replicable": "partly",
+  "replication_notes": "Need product-level EU import data by partner (Comext/Comtrade/BACI), HS level and agri definition; nominal threshold US$10m (EUR->USD conversion if Comext).",
+  "key_values": [
+   "MAR 48 (2021) / 25 (2002)",
+   "ZAF 36 / 24",
+   "PER 37 / 11",
+   "ECU 16 / 10",
+   "KEN 16 / 12"
+  ]
+ },
+ {
+  "label": "Figure 26",
+  "pdf_page": 27,
+  "section": "4B External constraints",
+  "kind": "chart",
+  "title": "Economic complexity index rankings, 2013 and 2023",
+  "chart_type": "slope (bump) chart of ranks, all countries in faint lines, peers highlighted",
+  "indicators": [
+   "Economic Complexity Index (ECI) rank"
+  ],
+  "geography": "Kenya vs Thailand, Malaysia, Vietnam, Indonesia, Rwanda, Tanzania, Ghana, Bangladesh, Ethiopia (all countries in background)",
+  "time_span": "2013 and 2023",
+  "source_note": "Source: Atlas of Economic Complexity, Harvard University.",
+  "data_sources": [
+   "Harvard Growth Lab Atlas of Economic Complexity"
+  ],
+  "method": "ECI ranks (Hidalgo-Hausmann method computed by Growth Lab), slope chart between two years",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "Download ECI rankings from Atlas (Growth Lab Dataverse); ranks vary by Atlas vintage and HS/SITC classification; text says 145 countries ranked.",
+  "key_values": [
+   "Kenya 87 -> 87",
+   "Thailand 26 -> 29",
+   "Malaysia 27 -> 27",
+   "Vietnam 58 -> 48",
+   "Indonesia 71 -> 72",
+   "Rwanda 90 -> 122",
+   "Tanzania 95 -> 116",
+   "Ghana 108 -> 107",
+   "Bangladesh 125 -> 128",
+   "Ethiopia 130 -> 117"
+  ]
+ },
+ {
+  "label": "Figure 27",
+  "pdf_page": 28,
+  "section": "4B External constraints",
+  "kind": "chart",
+  "title": "Applied tariffs: Kenya vs. World",
+  "chart_type": "multi-line",
+  "indicators": [
+   "Applied tariff rate, percent (simple vs weighted mean not stated)"
+  ],
+  "geography": "Kenya vs Upper middle income, World",
+  "time_span": "2000-2020 (annual)",
+  "source_note": "Source: World Bank 2023d, from WDI.",
+  "data_sources": [
+   "WDI",
+   "World Bank 2023d"
+  ],
+  "method": "Direct plot of WDI series",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "WDI TM.TAX.MRCH.SM.AR.ZS (applied, simple mean, all products) or TM.TAX.MRCH.WM.AR.ZS (weighted mean); choose by matching Kenya ~21% in 2000 and ~13.7% in 2020. Gaps may be interpolated.",
+  "key_values": [
+   "Kenya ~21 (2000), ~17 (2002-03), ~12.5 (2005), ~11.7 (2013), ~13.7 (2020)",
+   "UMIC ~14 (2000) -> ~6.1 (2017-2020)",
+   "World ~10.7 (2000) -> ~5.1 (2017-2020)"
+  ]
+ },
+ {
+  "label": "Figure 28",
+  "pdf_page": 28,
+  "section": "4B External constraints",
+  "kind": "chart",
+  "title": "Net exports of goods and services and REER (2007=100)*",
+  "chart_type": "scatter of two series vs REER with dotted (approximately linear) trendlines",
+  "indicators": [
+   "Y: Net goods exports, current US$ bn",
+   "Y: Net service exports, current US$ bn",
+   "X: REER (axis label says 2000=100; title says 2007=100)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "1992-2019 (annual)",
+  "source_note": "Source: WDI and Bruegel. * Note: data for 1992\u20132019",
+  "data_sources": [
+   "WDI",
+   "Bruegel REER database"
+  ],
+  "method": "Scatter of annual net exports against REER with fitted trendlines",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "WDI BN.GSR.MRCH.CD (net trade in goods, BoP) and services net (BN.GSR.GNFS.CD minus goods, or exports minus imports of services BoP); Bruegel REER; base year inconsistent (title 2007=100 vs axis 2000=100).",
+  "key_values": [
+   "Net goods exports range ~-0.5 to ~-10.8 US$ bn",
+   "Net service exports range ~0.2 to ~2.9 US$ bn",
+   "At REER ~152: goods ~-10.7, services ~1.7",
+   "Text: goods deficit US$1.2bn (2000) -> US$10.7bn (2019)"
+  ]
+ },
+ {
+  "label": "Figure 29",
+  "pdf_page": 30,
+  "section": "4C Productivity constraints",
+  "kind": "table",
+  "title": "Growth elasticity of poverty reduction, 2005/06\u20132019",
+  "chart_type": "table",
+  "indicators": [
+   "(a) Absolute poverty rate, %",
+   "Percentage change in poverty",
+   "(b) GDP per capita, 2017 PPP $",
+   "Percentage change in GDP per capita",
+   "Growth elasticity of poverty (a/b)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2005/06, 2015/16, 2019",
+  "source_note": "Source: World Bank, 2023c.",
+  "data_sources": [
+   "World Bank 2023c (Kenya Poverty Assessment)",
+   "KIHBS 2005/06, KIHBS 2015/16, KCHS 2019 (implied)",
+   "WDI GDP per capita PPP (implied)"
+  ],
+  "method": "Arc growth elasticity of poverty = % change in poverty rate / % change in GDP per capita between survey years",
+  "data_level": "mixed",
+  "publicly_replicable": "yes",
+  "replication_notes": "Poverty rates from KNBS/World Bank poverty assessment (national absolute poverty line); GDP pc from WDI NY.GDP.PCAP.PP.KD (2017 PPP vintage); 2005/06 GDP pc year convention (2005, 2006 or avg) must be matched to 3,327.",
+  "key_values": [
+   "Poverty 46.6 / 36.1 / 33.6 %",
+   "% change poverty -22.5 / -6.9",
+   "GDP pc 3,327 / 4,075 / 4,459",
+   "% change GDP pc 22.4 / 9.4",
+   "Elasticity -1 (2005/06-2015/16); -0.73 (2015/16-2019)"
+  ]
+ },
+ {
+  "label": "Figure 30",
+  "pdf_page": 32,
+  "section": "4C Productivity constraints",
+  "kind": "chart",
+  "title": "New jobs and expected labor market entrants, 2016-2025. Group headline: 'Labor-intensive tradable sectors, such as in agriculture and manufacturing, saw little growth; the majority of new jobs in Kenya were created in the informal sector'",
+  "chart_type": "stacked bar (formal + informal new jobs) with line (new labor market entrants)",
+  "indicators": [
+   "New informal jobs, number",
+   "New formal jobs, number",
+   "New labor market entrants, number"
+  ],
+  "geography": "Kenya only",
+  "time_span": "Bars 2016-2019; line 2016-2025 (2020-21 estimates; 2021-25 projections)",
+  "source_note": "Sources: World Bank Kenya Jobs Diagnostic (forthcoming) Notes: 2020-21: estimates; 2021\u201325: projections.",
+  "data_sources": [
+   "World Bank Kenya Jobs Diagnostic (World Bank 2023e)",
+   "likely KNBS Economic Survey new-jobs series (not stated)"
+  ],
+  "method": "Annual counts; entrants projections (method not stated, likely demographic cohort projections)",
+  "data_level": "mixed",
+  "publicly_replicable": "partly",
+  "replication_notes": "New formal/informal jobs plausibly from KNBS Economic Survey 'new jobs created' (modern vs informal sector); labor market entrant projections require demographic model (e.g., UN WPP working-age cohorts) not documented. Notes overlap (2021 both estimate and projection).",
+  "key_values": [
+   "Total new jobs ~805k (2016), ~905k (2017), ~825k (2018), ~845k (2019)",
+   "Formal ~90k (2016), ~110k (2017), ~80k (2018), ~75k (2019)",
+   "Entrants ~650k (2016), ~850k (2018), ~985k (2021), ~1.1m (2023), ~905k (2024), ~1.22m (2025)"
+  ]
+ },
+ {
+  "label": "Figure 31",
+  "pdf_page": 32,
+  "section": "4C Productivity constraints",
+  "kind": "chart",
+  "title": "GDP per worker index (2001\u20132022), Kenya and peers",
+  "chart_type": "multi-line index (Kenya red dashed)",
+  "indicators": [
+   "Labor productivity index (2001=100): constant 2015 GDP / total workers"
+  ],
+  "geography": "Kenya vs Ghana, Ethiopia, Rwanda, Tanzania, Indonesia, Vietnam, Bangladesh, South Africa, Malaysia",
+  "time_span": "2001-2022 (annual)",
+  "source_note": "Source: International Labour Organization (estimates, Nov. 2023; https://ilostat.ilo.org/data/) and World Bank World Development Indicators, World Bank staff calculations. Note: Labor productivity is calculated by dividing constant (2015) GDP by total number of workers.",
+  "data_sources": [
+   "ILOSTAT modelled estimates (Nov 2023)",
+   "WDI"
+  ],
+  "method": "Simple ratio GDP (constant 2015 US$) / ILO modelled employment, indexed to 2001=100",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "WDI NY.GDP.MKTP.KD and ILOSTAT EMP_2EMP_SEX_AGE_NB (ILO modelled, total 15+); vintage Nov 2023. Rwanda and Vietnam lines use similar dark green, hard to distinguish.",
+  "key_values": [
+   "Kenya ~131 in 2022 (~1.3%/yr per text, 2001-2019)",
+   "Ethiopia ~276",
+   "Dark green (Rwanda or Vietnam) ~248",
+   "Bangladesh ~230",
+   "Indonesia ~196",
+   "Tanzania ~192",
+   "Ghana ~184",
+   "Malaysia ~145",
+   "South Africa ~139"
+  ]
+ },
+ {
+  "label": "Figure 32",
+  "pdf_page": 32,
+  "section": "4C Productivity constraints",
+  "kind": "chart",
+  "title": "Employment, millions (2011-2022). Group headline: 'And whereas, over the years, employment grew across sectors, most of them were created in the low productivity ones'",
+  "chart_type": "grouped bar by sector, three years",
+  "indicators": [
+   "Employed population by sector, millions"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2011, 2016, 2022",
+  "source_note": "Sources: World Bank staff calculations based on ILO Modelled Projections (Nov. 2023; https://ilostat.ilo.org/data/) and KNSO.",
+  "data_sources": [
+   "ILOSTAT modelled estimates (Nov 2023)",
+   "KNBS (printed as 'KNSO')"
+  ],
+  "method": "ILO modelled employment by economic activity aggregated into 8 sectors",
+  "data_level": "macro",
+  "publicly_replicable": "partly",
+  "replication_notes": "ILOSTAT EMP_2EMP_SEX_ECO_NB (detailed ISIC aggregates) mapped to: Agriculture, Manufacturing, Construction, Other industry, Business & finance, Commerce & hospitality, Transport & ICT, Other services; mapping not documented; footnote 24 cites Nov 2022 vintage vs Nov 2023 in source line.",
+  "key_values": [
+   "Agriculture ~6.8 / 7.3 / 7.6",
+   "Manufacturing ~1.43 / 1.5 / 1.6",
+   "Construction ~0.7 / 1.15 / 1.72",
+   "Other industry ~0.17 / 0.23 / 0.32",
+   "Business & finance ~0.5 / 0.76 / 1.08",
+   "Commerce & hospitality ~4.15 / 4.9 / 5.48",
+   "Transport & ICT ~0.85 / 1.18 / 1.5",
+   "Other services ~2.82 / 3.4 / 4.03"
+  ]
+ },
+ {
+  "label": "Figure 33",
+  "pdf_page": 32,
+  "section": "4C Productivity constraints",
+  "kind": "chart",
+  "title": "Value-added per worker by sector, real local currency units (bns) (2011-2022)",
+  "chart_type": "grouped bar by sector, three years",
+  "indicators": [
+   "Labor productivity (real value added per worker), y-axis 'Labor Productivity (Bns)'"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2011, 2016, 2022",
+  "source_note": "Sources: World Bank staff calculations based on ILO Modelled Projections (Nov. 2023; https://ilostat.ilo.org/data/) and KNSO.",
+  "data_sources": [
+   "KNBS national accounts (real GVA by sector)",
+   "ILOSTAT modelled estimates"
+  ],
+  "method": "Sectoral real GVA (constant KES) / ILO modelled sectoral employment",
+  "data_level": "macro",
+  "publicly_replicable": "partly",
+  "replication_notes": "Needs KNBS real GVA by ISIC sector aggregated to the 8 groups and ILO employment; units unclear ('bns' label but magnitudes ~100-2,300 imply thousand KES per worker or a scaling); base year of real prices not stated.",
+  "key_values": [
+   "Agriculture ~195 / 210 / 220",
+   "Manufacturing ~430 / 475 / 525",
+   "Construction ~370 / 340 / 335",
+   "Other industry ~1,310 / 1,215 / 1,125",
+   "Business & finance ~2,305 / 2,005 / 2,005",
+   "Commerce & hospitality ~135 / 140 / 165",
+   "Transport & ICT ~835 / 835 / 845",
+   "Other services ~325 / 320 / 375"
+  ]
+ },
+ {
+  "label": "Figure 34",
+  "pdf_page": 33,
+  "section": "4 Constraints - C. Productivity constraints",
+  "kind": "chart",
+  "title": "Employment shares by major sector (2001-2022)",
+  "chart_type": "100% stacked bar (5 bars, one per year)",
+  "indicators": [
+   "Share in total employment, in percent (y-axis printed as 'Share in total emplyment, in percent'), split into 8 sectors: Agriculture; Manufacturing; Construction; Other industry; Business services (legend misspelt 'Business serivces'); Commerce & hospitality; Transport & ICT; Other services"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2001, 2006, 2011, 2016, 2022 (5-year snapshots, last one 2022)",
+  "source_note": "Sources: Own calculations based on ILO Modelled Projections (Nov. 2023; https://ilostat.ilo.org/data/) and KNSO. *Note: For further details on the methodology to decompose value-added per worker, please see McMillan and Rodrik (2011) and de Vries, Timmer, and de Vries (2015). [shared source line for Figures 34 and 35]",
+  "data_sources": [
+   "ILOSTAT (ILO Modelled Estimates, Nov 2023)",
+   "KNBS (printed as 'KNSO')",
+   "staff calculations"
+  ],
+  "method": "Simple shares: sector employment / total employment, with ILO economic-activity sectors grouped into 8 categories",
+  "data_level": "sector",
+  "publicly_replicable": "yes",
+  "replication_notes": "Use the ILOSTAT modelled estimates of employment by detailed economic activity (ISIC aggregates) for Kenya. Map them into the 8 groups. The page does not give the mapping. Inferred mapping: Other industry = mining + utilities; Business services = finance, real estate, professional/admin; Commerce & hospitality = trade + accommodation/food; Transport & ICT = transport, storage, communication; Other services = public admin, education, health, other. ILO vintages change, so values may shift slightly from the Nov 2023 release. Bottom-to-top stack order: Agriculture (navy), Manufacturing (dark green), Construction (orange), Other industry (grey, thin), Business services (light blue), Commerce & hospitality (blue), Transport & ICT (teal), Other services (light green). The chart looks like Stata output.",
+  "key_values": [
+   "Agriculture share approx: 45% (2001), 42% (2006), 39% (2011), 36% (2016), 33% (2022)",
+   "Commerce & hospitality approx 22-24% in every year",
+   "Construction rises from approx 2% (2001) to approx 7-8% (2022)",
+   "Other services approx 15% (2001) to approx 17-18% (2022)",
+   "2022 approx: Manufacturing ~6-7%, Business services ~5%, Transport & ICT ~6-7%"
+  ]
+ },
+ {
+  "label": "Figure 35",
+  "pdf_page": 33,
+  "section": "4 Constraints - C. Productivity constraints",
+  "kind": "chart",
+  "title": "Value-added per worker growth decomposition, in percentage points (2011-2019)",
+  "chart_type": "single stacked bar with positive and negative components (waterfall-style decomposition)",
+  "indicators": [
+   "Contribution to value-added per worker growth, percentage points: Inter-sectoral agriculture; Inter-sectoral industry; Inter-sectoral services; Within agriculture; Within industry; Within services",
+   "Total growth label: '2011-2019 (Growth = 1.8%)'"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2011-2019",
+  "source_note": "Sources: Own calculations based on ILO Modelled Projections (Nov. 2023; https://ilostat.ilo.org/data/) and KNSO. *Note: For further details on the methodology to decompose value-added per worker, please see McMillan and Rodrik (2011) and de Vries, Timmer, and de Vries (2015).",
+  "data_sources": [
+   "ILOSTAT (ILO Modelled Estimates, Nov 2023)",
+   "KNBS (printed as 'KNSO') national accounts value added",
+   "staff calculations"
+  ],
+  "method": "Shift-share decomposition of labor productivity (value added per worker) growth into within-sector and between-sector (structural change / inter-sectoral reallocation) components by 3 broad sectors (McMillan and Rodrik 2011; de Vries, Timmer and de Vries 2015)",
+  "data_level": "sector",
+  "publicly_replicable": "yes",
+  "replication_notes": "Needs real value added by sector (agriculture, industry, services) from KNBS, or WDI as a substitute, plus ILO modelled employment by the same sectors for 2011 and 2019. Apply the McMillan-Rodrik decomposition: within = sum(theta_i,0 * dP_i), between = sum(P_i,T * dtheta_i), where P_i is sector productivity and theta_i is the sector employment share. The page does not say whether the 1.8% is annualized or cumulative, nor which base-year weights are used. Text says inter-sectoral services is about 85% of the total. Legend: Inter-sectoral agriculture (dark teal), Inter-sectoral industry (light teal), Inter-sectoral services (green), Within agriculture (orange-red), Within industry (purple), Within services (dark purple). The chart looks like Excel output.",
+  "key_values": [
+   "Total growth = 1.8% (printed)",
+   "Inter-sectoral agriculture approx -0.45 pp",
+   "Inter-sectoral industry approx +0.2 pp",
+   "Inter-sectoral services approx +1.55 pp (0.2 to 1.75)",
+   "Within agriculture approx +0.45 pp (1.75 to 2.2)",
+   "Within industry approx +0.1 pp; within services barely visible (~0)",
+   "Text: services inter-sectoral reallocation about 85% of total"
+  ]
+ },
+ {
+  "label": "Figure 36",
+  "pdf_page": 34,
+  "section": "4 Constraints - C. Productivity constraints",
+  "kind": "chart",
+  "title": "Real Annual Wages in the Formal Sector in Kenya (2023 Kenyan shillings)",
+  "chart_type": "multi-line time series (3 lines)",
+  "indicators": [
+   "Real annual wage per formal-sector employee, millions of real KSh (2023 prices): Private (dashed purple), Public (dotted orange), Total (solid teal)"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2008-2023 (annual)",
+  "source_note": "Source: Kenya Economic Survey, 2005-2023. Kenya National Bureau of Statistics.",
+  "data_sources": [
+   "KNBS Economic Survey"
+  ],
+  "method": "Simple ratio: nominal formal-sector wage bill / employment (average earnings) by public, private and total, deflated to 2023 KSh (deflator not stated, likely CPI)",
+  "data_level": "macro",
+  "publicly_replicable": "partly",
+  "replication_notes": "The data are in KNBS Economic Survey tables on wage employment and earnings in the modern/formal sector, by public and private sector. They must be pulled from the annual PDF editions (2005-2023), which needs a scraping or table-extraction connector. The deflator is not stated; CPI from KNBS, or IMF/WDI as a substitute, to 2023 base is the likely choice. Text cites a small uptick in 2025, but the chart ends in 2023. The text's 2.1% figure for 2010-2019 does not match the Total line, which is about +4.6% by eye, so it may refer to a different series.",
+  "key_values": [
+   "Total approx: 2008 1.04; 2009 0.975; 2010 0.972; 2011 0.89; 2012 0.855 (trough); 2013 0.96; 2015 0.998; 2017 0.977; 2019 1.017 (peak); 2020 0.995; 2021 0.96; 2022 0.93; 2023 0.888 million KSh",
+   "Private approx: 2008 1.033; 2012 0.83; 2019 1.012; 2023 0.917",
+   "Public approx: 2008 0.988; 2012 0.91; 2013 1.025; 2015-2016 1.055 (peak); 2019 1.03; 2023 0.832",
+   "Text: real wages fell 12.8% between 2019 and 2023 (consistent with Total 1.017 to 0.888)"
+  ]
+ },
+ {
+  "label": "Figure 37",
+  "pdf_page": 35,
+  "section": "4 Constraints - C. Productivity constraints",
+  "kind": "chart",
+  "title": "Domestic credit to the private sector and value-added in services (share of GDP), 2019",
+  "chart_type": "cross-country scatter with fitted (concave, apparently quadratic) line; Kenya highlighted and labelled",
+  "indicators": [
+   "y: Domestic Credit to Private Sector (% of GDP)",
+   "x: Value-added in services (share of GDP)"
+  ],
+  "geography": "Kenya vs all countries (cross-country, approx 150+ economies, unlabeled except Kenya)",
+  "time_span": "2019 (single year)",
+  "source_note": "Source: WDI.",
+  "data_sources": [
+   "WDI"
+  ],
+  "method": "Cross-country scatter with fitted curve (looks like a Stata qfit quadratic fit; the fit type is not stated); Kenya compared with the fitted value",
+  "data_level": "macro",
+  "publicly_replicable": "yes",
+  "replication_notes": "WDI series FS.AST.PRVT.GD.ZS (domestic credit to private sector, % GDP) and NV.SRV.TOTL.ZS (services value added, % GDP) for 2019, all countries (aggregates excluded). Fit a quadratic of y on x and highlight Kenya. The fitted curve runs from about -15 at x=25 to about 132 at x=94. WDI revisions (e.g., Kenya's GDP rebasing) may move Kenya's point. The bold headline above the figure says 'Kenya's domestic credit to the private sector seems highly responsive to real interest rates, suggesting a supply-side constraint in access to finance', which does not describe the chart content. The chart looks like Stata output.",
+  "key_values": [
+   "Kenya approx x=57% services VA, y=24% credit-to-GDP",
+   "Fitted value at Kenya's services share approx 55-60% of GDP (text: peers provide 'around twice as much' credit)",
+   "Max observation approx 234% (x approx 72)",
+   "Fitted line approx -15 at x=25, approx 50 at x=50, approx 132 at x=94"
+  ]
+ },
+ {
+  "label": "Figure 38a",
+  "pdf_page": 40,
+  "section": "4 Constraints - D. Climate constraints",
+  "kind": "chart",
+  "title": "Deviation in real GDP from baseline due to climate change impacts by damage channel, 2050 - a. BAU scenario",
+  "chart_type": "stacked bar (negative), 2 bars (Dry/hot mean, Wet/warm mean)",
+  "indicators": [
+   "Deviation from baseline (%) of real GDP in 2050 by damage channel: Crops, rainfed and erosion; Livestock; Heat on labour, all sectors; Health on productivity; Roads and bridges; Inland flooding"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2050 (projection)",
+  "source_note": "Source: World Bank, 2023b.",
+  "data_sources": [
+   "World Bank Kenya Country Climate and Development Report (CCDR) 2023"
+  ],
+  "method": "Model simulation: CCDR macroeconomic model with climate damage functions by channel under dry/hot and wet/warm climate scenarios (mean); BAU = 5% annual growth. The specific model is not named on the page.",
+  "data_level": "model output",
+  "publicly_replicable": "no",
+  "replication_notes": "This is a reproduced low-resolution image of a CCDR model output. It cannot be rebuilt from public data with deterministic tools. The values can only be transcribed or digitized from the Kenya CCDR (World Bank 2023b). Color note: the bars contain a green segment (third from top), but the legend swatch for 'Heat on labour, all sectors' appears light orange/amber. The green segment is presumably heat on labour (text: heat stress costs 0.9-1.3% of GDP). Axis 0 to -8.",
+  "key_values": [
+   "Dry/hot mean total approx -7.3% (text: 7.3%)",
+   "Wet/warm mean total approx -3.6% (text: 3.6%)",
+   "Dry/hot: crops approx -2.9; livestock approx -0.65; heat on labour (green) approx -1.3; health approx -0.35; roads and bridges approx -1.75; inland flooding approx -0.3",
+   "Wet/warm: crops approx -0.8; livestock approx -0.4; heat on labour approx -1.05; health approx -0.35; roads approx -0.8; flooding approx -0.2"
+  ]
+ },
+ {
+  "label": "Figure 38b",
+  "pdf_page": 40,
+  "section": "4 Constraints - D. Climate constraints",
+  "kind": "chart",
+  "title": "Deviation in real GDP from baseline due to climate change impacts by damage channel, 2050 - b. ASP scenario",
+  "chart_type": "stacked bar (negative), 2 bars (Dry/hot mean, Wet/warm mean)",
+  "indicators": [
+   "Deviation from baseline (%) of real GDP in 2050 by damage channel: Crops, rainfed and erosion; Livestock; Heat on labour, all sectors; Health on productivity; Roads and bridges; Inland flooding"
+  ],
+  "geography": "Kenya only",
+  "time_span": "2050 (projection)",
+  "source_note": "Source: World Bank, 2023b.",
+  "data_sources": [
+   "World Bank Kenya Country Climate and Development Report (CCDR) 2023"
+  ],
+  "method": "Model simulation: CCDR macro model with climate damage channels; ASP = aspirational scenario with 7.5% annual growth (text), dry/hot and wet/warm climate means",
+  "data_level": "model output",
+  "publicly_replicable": "no",
+  "replication_notes": "Same as panel a: this is a CCDR model output and can only be digitized or transcribed from World Bank 2023b. The same legend color mismatch applies (green segment vs light-orange 'Heat on labour' swatch). The text gives 2.8-5.3%, while the digitized dry/hot bar reaches about -5.5%.",
+  "key_values": [
+   "Dry/hot mean total approx -5.5% (text: 5.3%)",
+   "Wet/warm mean total approx -2.85% (text: 2.8%)",
+   "Dry/hot: crops approx -1.75; livestock approx -0.45; heat on labour approx -1.15; health approx -0.35; roads approx -1.55; flooding approx -0.3",
+   "Wet/warm: crops approx -0.45; livestock approx -0.2; heat on labour approx -1.0; health approx -0.35; roads approx -0.7; flooding approx -0.2"
+  ]
+ }
+]

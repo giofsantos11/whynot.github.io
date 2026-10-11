@@ -77,3 +77,32 @@ def year_of(period: str) -> int | None:
     """Best-effort calendar year of a period string ("2024", "2024Q1", "2024-03")."""
     head = str(period)[:4]
     return int(head) if head.isdigit() else None
+
+
+# -- conventions shared by connectors, methods and caveat checks -------------
+
+#: Allowed values for ``obs_status`` (connectors map provider flags onto these).
+OBS_STATUS = {
+    "",             # ordinary observed value
+    "estimate",     # provider estimate
+    "forecast",     # projection/forecast year (e.g. WEO years after the last actual)
+    "modelled",     # model-based estimate (e.g. ILO modelled estimates)
+    "provisional",  # preliminary/provisional
+    "break",        # series break at this observation
+    "imputed",      # imputed/interpolated by the provider
+}
+
+
+def ppp_base(unit: str) -> str | None:
+    """Return the PPP base year ("2011", "2017", "2021") encoded in a unit label.
+
+    Connectors MUST write PPP-based units with the base year, e.g.
+    ``"constant 2021 international $ (PPP 2021)"`` or ``"PPP 2017"``, so
+    caveat checks can block mixing PPP vintages.
+    """
+    import re
+
+    if not unit or "ppp" not in unit.lower():
+        return None
+    m = re.search(r"ppp\s*\(?\s*(19|20)(\d{2})", unit, flags=re.I) or re.search(r"(19|20)(\d{2})\s*(?:international|intl)", unit, flags=re.I)
+    return (m.group(1) + m.group(2)) if m else "unknown"

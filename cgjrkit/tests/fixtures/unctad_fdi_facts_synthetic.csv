@@ -1,0 +1,49 @@
+Economy_Code,Economy_Label,Economy_IsTarget,Economy_ValidFrom,Economy_ValidTo,Economy_Level,Economy_Hidden,Economy_Expand,Economy_Note,Economy_Order,Year,Direction_Code,Direction_Label,Direction_Hidden,Direction_Note,Direction_Order,Flow_Code,Flow_Label,Flow_Hidden,Flow_Note,Flow_Order,M5011_Value,M5011_Footnote_Code,M5011_Footnote_Text,M5011_MissingValue_Code,M5011_MissingValue_Label,M0100_Value,M0100_Footnote_Code,M0100_Footnote_Text,M0100_MissingValue_Code,M0100_MissingValue_Label
+404,"Kenya",True,1940,2102,5,True,True,,1,2097,1,"Inward",False,,1,08,"Flow",False,,1,0.1,0,,,,100000000,0,,,
+404,"Kenya",True,1940,2102,5,True,True,,1,2097,1,"Inward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,0.1,0,,,,1000000000,0,,,
+404,"Kenya",True,1940,2102,5,True,True,,1,2097,2,"Outward",False,,1,08,"Flow",False,,1,0.1,0,,,,10000000,0,,,
+404,"Kenya",True,1940,2102,5,True,True,,1,2097,2,"Outward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,0.1,0,,,,100000000,0,,,
+404,"Kenya",True,1940,2102,5,True,True,,1,2098,1,"Inward",False,,1,08,"Flow",False,,1,0.1,0,,,,200000000,1,Synthetic estimate,,
+404,"Kenya",True,1940,2102,5,True,True,,1,2098,1,"Inward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,0.1,0,,,,2000000000,1,Synthetic estimate,,
+404,"Kenya",True,1940,2102,5,True,True,,1,2098,2,"Outward",False,,1,08,"Flow",False,,1,0.1,0,,,,20000000,1,Synthetic estimate,,
+404,"Kenya",True,1940,2102,5,True,True,,1,2098,2,"Outward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,0.1,0,,,,200000000,1,Synthetic estimate,,
+800,"Uganda",True,1940,2102,5,True,True,,1,2097,1,"Inward",False,,1,08,"Flow",False,,1,0.05,0,,,,50000000,0,,,
+800,"Uganda",True,1940,2102,5,True,True,,1,2097,1,"Inward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,0.05,0,,,,500000000,0,,,
+800,"Uganda",True,1940,2102,5,True,True,,1,2097,2,"Outward",False,,1,08,"Flow",False,,1,0.05,0,,,,5000000,0,,,
+800,"Uganda",True,1940,2102,5,True,True,,1,2097,2,"Outward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,0.05,0,,,,50000000,0,,,
+800,"Uganda",True,1940,2102,5,True,True,,1,2098,1,"Inward",False,,1,08,"Flow",False,,1,-0.025,0,,,,-50000000,0,,,
+800,"Uganda",True,1940,2102,5,True,True,,1,2098,1,"Inward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,0.05,0,,,,1000000000,0,,,
+800,"Uganda",True,1940,2102,5,True,True,,1,2098,2,"Outward",False,,1,08,"Flow",False,,1,0.05,0,,,,10000000,0,,,
+800,"Uganda",True,1940,2102,5,True,True,,1,2098,2,"Outward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,0.05,0,,,,100000000,0,,,
+736,"Sudan (...2011) (synthetic)",True,1940,2102,5,True,True,,1,2097,1,"Inward",False,,1,08,"Flow",False,,1,0.02,0,,,,20000000,0,,,
+736,"Sudan (...2011) (synthetic)",True,1940,2102,5,True,True,,1,2097,1,"Inward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,0.02,0,,,,200000000,0,,,
+736,"Sudan (...2011) (synthetic)",True,1940,2102,5,True,True,,1,2097,2,"Outward",False,,1,08,"Flow",False,,1,0.02,0,,,,2000000,0,,,
+736,"Sudan (...2011) (synthetic)",True,1940,2102,5,True,True,,1,2097,2,"Outward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,0.02,0,,,,20000000,0,,,
+736,"Sudan (...2011) (synthetic)",True,1940,2102,5,True,True,,1,2098,1,"Inward",False,,1,08,"Flow",False,,1,,0,,2,Not available,,0,,2,Not available
+736,"Sudan (...2011) (synthetic)",True,1940,2102,5,True,True,,1,2098,1,"Inward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,,0,,2,Not available,,0,,2,Not available
+736,"Sudan (...2011) (synthetic)",True,1940,2102,5,True,True,,1,2098,2,"Outward",False,,1,08,"Flow",False,,1,,0,,2,Not available,,0,,2,Not available
+736,"Sudan (...2011) (synthetic)",True,1940,2102,5,True,True,,1,2098,2,"Outward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,,0,,2,Not available,,0,,2,Not available
+0000,"World",True,1940,2102,5,True,True,,1,2097,1,"Inward",False,,1,08,"Flow",False,,1,100.0,0,,,,100000000000,0,,,
+0000,"World",True,1940,2102,5,True,True,,1,2097,1,"Inward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,100.0,0,,,,1000000000000,0,,,
+0000,"World",True,1940,2102,5,True,True,,1,2097,2,"Outward",False,,1,08,"Flow",False,,1,100.0,0,,,,10000000000,0,,,
+0000,"World",True,1940,2102,5,True,True,,1,2097,2,"Outward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,100.0,0,,,,100000000000,0,,,
+0000,"World",True,1940,2102,5,True,True,,1,2098,1,"Inward",False,,1,08,"Flow",False,,1,100.0,0,,,,200000000000,0,,,
+0000,"World",True,1940,2102,5,True,True,,1,2098,1,"Inward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,100.0,0,,,,2000000000000,0,,,
+0000,"World",True,1940,2102,5,True,True,,1,2098,2,"Outward",False,,1,08,"Flow",False,,1,100.0,0,,,,20000000000,0,,,
+0000,"World",True,1940,2102,5,True,True,,1,2098,2,"Outward",False,,1,09,"Stock",False,"Synthetic note: stock is the
+value of capital (multi-line field).",1,100.0,0,,,,200000000000,0,,,

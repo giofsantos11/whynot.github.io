@@ -1,0 +1,45 @@
+# Country registry: Philippines. "status" uses verified/unverified;
+# unknown values are written as "unknown".
+schema_version: 1
+iso3: PHL
+iso2: PH
+name: Philippines
+currency: PHP
+report:
+  code: PHL-2025
+  title: "Philippines. Running Uphill: Growth, Jobs, and the Quest for Productivity (World Bank, 2025)"
+
+fiscal_year:
+  start_month: 1          # January - December (calendar year)
+  end_month: 12
+  label_format: "calendar year (2024)"
+  status: verified
+  evidence:
+    - "World Bank Philippines documents list 'Fiscal Year January 1 - December 31' (e.g. 2014 DPL report 87921-PH; Country Partnership Framework July 2025 - June 2031)"
+  notes: "Fiscal year equals the calendar year; no conversion needed."
+
+statistics_office:
+  name: "Philippine Statistics Authority (PSA)"
+  host: psa.gov.ph
+  status: verified
+  evidence: ["https://psa.gov.ph/content/psna-adopts-2018-new-base-year"]
+other_official_hosts:
+  - {name: "PSA OpenSTAT", host: openstat.psa.gov.ph, status: unverified}
+  - {name: "Bangko Sentral ng Pilipinas", host: www.bsp.gov.ph, status: unverified}
+
+national_accounts:
+  base_year: 2018
+  previous_base_year: 2000
+  rebased_release: "April 2020 (fifth PSNA revision; rebased series 2000-2019)"
+  sna: "2008 SNA"
+  status: verified
+  evidence:
+    - "https://psa.gov.ph/content/psna-adopts-2018-new-base-year"
+    - "https://psa.gov.ph/content/release-revised-and-rebased-2018-national-accounts-philippines"
+  notes: "16 industries (2009 PSIC). PSA plans to rebase every ten years. The report's CGE work uses a 2018 SAM."
+
+ppp:
+  report_ppp_bases: ["2021"]
+  notes:
+    - "The report's catch-up chart uses GDP per capita, PPP (constant 2021 US$), 1990-2023 (WDI after the ICP 2021 switch)."
+    - "Regional GDP per capita charts are in thousand PPP-adjusted international $; record the PPP base used."

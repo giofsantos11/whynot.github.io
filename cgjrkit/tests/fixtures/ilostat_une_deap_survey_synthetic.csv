@@ -1,0 +1,8 @@
+"ref_area","source","indicator","sex","classif1","time","obs_value","obs_status","note_classif","note_indicator","note_source"
+"KEN","BA:1111","UNE_DEAP_SEX_AGE_RT","SEX_T","AGE_YTHADULT_YGE15","2019",10.0,"","","","R1:3903"
+"KEN","BA:1111","UNE_DEAP_SEX_AGE_RT","SEX_T","AGE_YTHADULT_YGE15","2020",11.0,"B","","T35:5","R1:3903"
+"KEN","AA:2222","UNE_DEAP_SEX_AGE_RT","SEX_T","AGE_YTHADULT_YGE15","2019",12.0,"","","",""
+"KEN","BA:1111","UNE_DEAP_SEX_AGE_RT","SEX_T","AGE_YTHADULT_Y15-24","2019",20.0,"","","",""
+"UGA","BA:3333","UNE_DEAP_SEX_AGE_RT","SEX_T","AGE_YTHADULT_YGE15","2019",5.0,"","","",""
+"UGA","BA:3333","UNE_DEAP_SEX_AGE_RT","SEX_T","AGE_YTHADULT_YGE15","2020","","U","","",""
+"UGA","BA:3333","UNE_DEAP_SEX_AGE_RT","SEX_T","AGE_YTHADULT_YGE15","2021",6.0,"Z","","",""

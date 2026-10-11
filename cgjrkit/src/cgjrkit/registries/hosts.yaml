@@ -1,0 +1,406 @@
+# Hosts that cgjrkit calls or plans to call: the single source for the network
+# allowlist (docs/ALLOWLIST.md, cloud environment, Bank IT review) and for
+# per-host rate-limit defaults. Every connector's `domains` must appear here
+# (tests/test_registries.py enforces it).
+#
+# Fields
+#   connectors   connector modules (cgjrkit.connectors.<name>) that call the host;
+#                [] for hosts reserved for planned tools
+#   purpose      what the host serves
+#   status       verified   = host and URL forms confirmed from official docs or the
+#                             provider's / a maintained client's source code
+#                unverified = taken from the plan or third-party material; confirm
+#                             with a live test once the host is allowlisted
+#   dev_network  blocked | untested  (state in the build environment, Oct 2026;
+#                inventory/build-plan.md section 5.2; nothing here was reachable)
+#   auth         none | key:<ENV VAR> | token:<ENV VAR>
+#   rate_limit   {requests, per_seconds, basis, note}
+#                basis: published            = provider's own figure
+#                       client_practice      = what maintained clients do
+#                       conservative_default = limit unknown (U); cautious default
+#   phase        mvp | next | later | excluded (inventory/build-plan.md section 3)
+#   evidence     where the facts above come from
+schema_version: 1
+
+defaults:
+  rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default,
+               note: "Used for any host whose limit is unknown (plan: cautious defaults where the limit is U)"}
+
+hosts:
+  # --- World Bank -----------------------------------------------------------
+  api.worldbank.org:
+    connectors: [worldbank, pip]
+    purpose: "Indicators API v2 (WDI, WGI, GFDD; WDI Database Archives = source 57) and the PIP API under /pip/v1"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default,
+                 note: "No published limit; PIP answers 429 with a retry delay (pipr); WDI uses per_page=10000 so panels are one request"}
+    phase: mvp
+    evidence: ["docs/apis/worldbank.md", "docs/apis/pip.md",
+               "https://datahelpdesk.worldbank.org/knowledgebase/articles/1886674-new-features-and-enhancements-in-the-v2-api"]
+  data360api.worldbank.org:
+    connectors: [data360]
+    purpose: "Data360 API (WB_ES Enterprise Surveys aggregates, WB_LPI_20, metadata)"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "None documented"}
+    phase: mvp
+    evidence: ["docs/apis/data360.md (OpenAPI spec, worldbank/data360-mcp)"]
+  wits.worldbank.org:
+    connectors: []
+    purpose: "WITS/TRAINS tariffs (SDMX at /API/V1/SDMX/V21/rest/, dataflow DF_WITS_Tariff_TRAINS); planned trade_data"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Unknown (U)"}
+    phase: mvp
+    evidence: ["https://wits.worldbank.org/witsapiintro.aspx (plan section 4.2)"]
+  search.worldbank.org:
+    connectors: []
+    purpose: "Documents & Reports API (/api/v3/wds) for literature resolution; only after legal sign-off"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Unknown (U)"}
+    phase: later
+    evidence: ["https://documents.worldbank.org/en/publication/documents-reports/api (plan section 4.3)"]
+  openknowledge.worldbank.org:
+    connectors: []
+    purpose: "Open Knowledge Repository (handles 10986/...) for literature links"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Unknown (U)"}
+    phase: mvp
+    evidence: ["plan section 4.3"]
+
+  # --- IMF ------------------------------------------------------------------
+  api.imf.org:
+    connectors: [imf]
+    purpose: "IMF SDMX 3.0 API (WEO and WEO vintage dataflows, BOP and the thematic flows that replaced IFS)"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 40, per_seconds: 60, basis: client_practice,
+                 note: "No published limit for the new API; legacy API allowed 10 requests per 5 s per IP; imfp waits 1.5 s between calls. IMF terms require written permission for systematic downloading"}
+    phase: mvp
+    evidence: ["docs/apis/imf.md", "https://data.imf.org/en/Resource-Pages/IMF-API"]
+  www.imf.org:
+    connectors: [imf]
+    purpose: "IMF DataMapper API (latest WEO fallback)"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Unknown (U)"}
+    phase: mvp
+    evidence: ["docs/apis/imf.md"]
+
+  # --- ILO ------------------------------------------------------------------
+  rplumber.ilo.org:
+    connectors: [ilostat]
+    purpose: "ILOSTAT bulk/data service (CSV per indicator, table of contents, code lists); default ILOSTAT route"
+    status: verified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "None published; files generated on request"}
+    phase: mvp
+    evidence: ["docs/apis/ilostat.md (Rilostat 2.5.0 source; third-party live checks 2026-10-06)"]
+  sdmx.ilo.org:
+    connectors: [ilostat]
+    purpose: "ILOSTAT SDMX REST (optional route); at most 300,000 records per query"
+    status: verified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Record cap 300k per query (Rilostat docs); no request limit published"}
+    phase: mvp
+    evidence: ["https://webapps.ilo.org/ilostat-files/Documents/SDMX_User_Guide.pdf", "docs/apis/ilostat.md"]
+  ilostat.ilo.org:
+    connectors: []
+    purpose: "ILOSTAT portal and bulk download pages (documentation; Cloudflare challenge seen by third parties)"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Not called by code"}
+    phase: mvp
+    evidence: ["https://ilostat.ilo.org/data/bulk/"]
+
+  # --- GGDC / Penn World Table ---------------------------------------------
+  dataverse.nl:
+    connectors: [pwt]
+    purpose: "DataverseNL files for PWT 10.01 (doi:10.34894/QT5BCC) and 11.0 (doi:10.34894/FABVLR); GGDC/WIDER ETD later"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "File downloads; one request per version"}
+    phase: mvp
+    evidence: ["docs/apis/pwt.md"]
+  www.rug.nl:
+    connectors: [pwt]
+    purpose: "GGDC pages and PWT 10.0 file; ETD pages"
+    status: verified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "File downloads"}
+    phase: mvp
+    evidence: ["docs/apis/pwt.md"]
+
+  # --- Bruegel --------------------------------------------------------------
+  www.bruegel.org:
+    connectors: [bruegel]
+    purpose: "Bruegel REER database (zipped workbook replaced in place; snapshot it)"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "File download"}
+    phase: mvp
+    evidence: ["docs/apis/bruegel.md"]
+
+  # --- United Nations -------------------------------------------------------
+  population.un.org:
+    connectors: [wpp]
+    purpose: "UN WPP 2024 bulk CSV files (no auth) and Data Portal API v1 (token for data endpoints, 100 records per page)"
+    status: verified
+    dev_network: blocked
+    auth: "token:CGJRKIT_WPP_KEY (API data endpoints only)"
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Not published; bulk files are 16-300 MB"}
+    phase: mvp
+    evidence: ["docs/apis/wpp.md", "https://population.un.org/dataportalapi/index.html"]
+  comtradeapi.un.org:
+    connectors: []
+    purpose: "UN Comtrade API (Next phase, only after the licence answer from comtrade@un.org)"
+    status: verified
+    dev_network: blocked
+    auth: "key:CGJRKIT_COMTRADE_KEY"
+    rate_limit: {requests: 500, per_seconds: 86400, basis: published,
+                 note: "Free key: 500 calls/day and 100k records per call (third-party vignette, I); results are cut off at the record cap"}
+    phase: next
+    evidence: ["https://github.com/uncomtrade/comtradeapicall", "https://docs.ropensci.org/comtradr/articles/large_data.html"]
+
+  # --- UNCTAD ---------------------------------------------------------------
+  unctadstat-api.unctad.org:
+    connectors: [unctad]
+    purpose: "UNCTADstat Data Centre: report metadata and keyless bulk downloads (FDI flows and stocks)"
+    status: unverified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Unknown (U)"}
+    phase: mvp
+    evidence: ["docs/apis/unctad.md (written by the unctad connector)"]
+  unctadstat-user-api.unctad.org:
+    connectors: [unctad]
+    purpose: "UNCTADstat Data API (keyed POST, CSV)"
+    status: unverified
+    dev_network: untested
+    auth: "key:CGJRKIT_UNCTAD_KEY (+ CGJRKIT_UNCTAD_CLIENT_ID)"
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Unknown (U)"}
+    phase: mvp
+    evidence: ["docs/apis/unctad.md (written by the unctad connector)"]
+  unctadstat.unctad.org:
+    connectors: []
+    purpose: "UNCTADstat Data Centre web pages (documentation, CSV export)"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Not called by code"}
+    phase: mvp
+    evidence: ["https://unctadstat.unctad.org/EN/FAQ.html (plan section 4.2)"]
+
+  # --- OECD -----------------------------------------------------------------
+  sdmx.oecd.org:
+    connectors: [oecd]
+    purpose: "OECD SDMX REST (PMR, STRI, FDI restrictiveness, TiVA/ICIO)"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 20, per_seconds: 3600, basis: published,
+                 note: "Official figures conflict: 60 downloads/hour (oecd.org) vs 20/hour (iLibrary copy); plan for 20/hour. VPN traffic is blocked"}
+    phase: mvp
+    evidence: ["https://www.oecd.org/en/data/insights/data-explainers/2024/11/Api-best-practices-and-recommendations.html"]
+
+  # --- Harvard Growth Lab ---------------------------------------------------
+  atlas.hks.harvard.edu:
+    connectors: [atlas]
+    purpose: "Atlas of Economic Complexity GraphQL API (cross-check only; ECI is computed locally)"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 120, per_seconds: 60, basis: published, note: "llms.txt v1.0 (2025-11-20): 120 requests/minute or fewer"}
+    phase: mvp
+    evidence: ["https://atlas.hks.harvard.edu/llms.txt"]
+
+  # --- CEPII ----------------------------------------------------------------
+  www.cepii.fr:
+    connectors: [baci]
+    purpose: "CEPII BACI bilateral trade (HS6) zip files"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Large file downloads (0.3-2.4 GB zipped)"}
+    phase: mvp
+    evidence: ["https://www.cepii.fr/DATA_DOWNLOAD/baci/doc/baci_webpage.html", "docs/apis/baci.md"]
+
+  # --- other planned data hosts ---------------------------------------------
+  stat.unido.org:
+    connectors: []
+    purpose: "UNIDO INDSTAT (portal; API undocumented)"
+    status: unverified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Unknown (U)"}
+    phase: next
+    evidence: ["plan section 4.1"]
+  i-tip.wto.org:
+    connectors: []
+    purpose: "WB-WTO Services Trade Restrictiveness Index downloads"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Unknown (U)"}
+    phase: mvp
+    evidence: ["https://data.wto.org/dataset/stpd (plan section 4.2)"]
+  www.enterprisesurveys.org:
+    connectors: []
+    purpose: "Enterprise Surveys indicator pages (aggregates are read through data360api.worldbank.org)"
+    status: verified
+    dev_network: blocked
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Not called by code"}
+    phase: mvp
+    evidence: ["https://www.enterprisesurveys.org/en/data"]
+
+  # --- literature -----------------------------------------------------------
+  api.openalex.org:
+    connectors: [openalex]
+    purpose: "OpenAlex works metadata (literature resolver)"
+    status: verified
+    dev_network: blocked
+    auth: "key:CGJRKIT_OPENALEX_KEY (optional; sent as a Bearer header)"
+    rate_limit: {requests: 100, per_seconds: 1, basis: published, note: "100 requests/s; free daily budget of $1 with a key, $0.10 without"}
+    phase: mvp
+    evidence: ["docs/apis/literature.md",
+               "https://github.com/ourresearch/docs (api-reference/authentication.mdx, openapi.json)"]
+  api.crossref.org:
+    connectors: [crossref]
+    purpose: "Crossref DOI metadata (literature cross-check)"
+    status: verified
+    dev_network: blocked
+    auth: "mailto parameter"
+    rate_limit: {requests: 10, per_seconds: 1, basis: published, note: "10 requests/s for single DOIs, 3/s for lists"}
+    phase: mvp
+    evidence: ["https://crossref.org/blog/announcing-changes-to-rest-api-rate-limits/"]
+  doi.org:
+    connectors: []
+    purpose: "DOI resolution (PWT and literature identifiers)"
+    status: verified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Unknown (U)"}
+    phase: mvp
+    evidence: ["plan section 5.2"]
+  hdl.handle.net:
+    connectors: []
+    purpose: "Handle System proxy: OKR handle links (handles.handle_url) and their live link checks; a possible JSON handle verifier (/api/handles/<handle>)"
+    status: verified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 30, per_seconds: 60, basis: conservative_default, note: "Unknown (U)"}
+    phase: mvp
+    evidence: ["docs/apis/literature.md (Handle proxy REST format checked via pyhandle)"]
+  www.nber.org:
+    connectors: []
+    purpose: "Redirect target of NBER DOIs (10.3386/...); used only by the live link check in tests/live/test_handles_live.py"
+    status: verified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 10, per_seconds: 60, basis: conservative_default, note: "Website, not an API; link checks only"}
+    phase: mvp
+    evidence: ["https://www.nber.org/papers/w17143", "docs/apis/literature.md"]
+
+  # --- national statistics offices, ministries and central banks -------------
+  # Used by national_table_ingest (files fetched by hand or by URL); hostnames
+  # marked verified were seen in official URLs during research (Oct 2026).
+  www.knbs.or.ke:
+    connectors: []
+    purpose: "Kenya National Bureau of Statistics: Economic Survey, national accounts, quarterly GDP"
+    status: verified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 10, per_seconds: 60, basis: conservative_default, note: "Government site; be gentle"}
+    phase: mvp
+    evidence: ["https://www.knbs.or.ke/press-release-on-launch-of-the-revised-national-accounts-estimates/"]
+  www.treasury.go.ke:
+    connectors: []
+    purpose: "Kenya National Treasury: budget outturn and fiscal tables (Kenya Figs 8, 18, 19)"
+    status: verified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 10, per_seconds: 60, basis: conservative_default, note: "Government site; be gentle"}
+    phase: mvp
+    evidence: ["https://www.treasury.go.ke/wp-content/uploads/2021/04/Central-Government-Consolidated-Financial-Statements.pdf"]
+  www.centralbank.go.ke:
+    connectors: []
+    purpose: "Central Bank of Kenya statistics (credit, BOP, exchange rates)"
+    status: unverified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 10, per_seconds: 60, basis: conservative_default, note: "Government site; be gentle"}
+    phase: mvp
+    evidence: ["plan section 5.2 (hostname U)"]
+  psa.gov.ph:
+    connectors: []
+    purpose: "Philippine Statistics Authority: national accounts (base year 2018), LFS aggregates"
+    status: verified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 10, per_seconds: 60, basis: conservative_default, note: "Government site; be gentle"}
+    phase: mvp
+    evidence: ["https://psa.gov.ph/content/psna-adopts-2018-new-base-year"]
+  www.bps.go.id:
+    connectors: []
+    purpose: "BPS-Statistics Indonesia: national accounts, Sakernas aggregates"
+    status: verified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 10, per_seconds: 60, basis: conservative_default, note: "Government site; be gentle"}
+    phase: mvp
+    evidence: ["https://www.bps.go.id/en/news/2014/12/31/103/perubahan-tahun-dasar-pdb-indonesia-berbasis-sna-2008.html"]
+  www.stat.gov.mk:
+    connectors: []
+    purpose: "State Statistical Office of North Macedonia (MakStat): national accounts, LFS"
+    status: unverified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 10, per_seconds: 60, basis: conservative_default, note: "Government site; be gentle"}
+    phase: mvp
+    evidence: ["plan section 5.2 (hostname U)"]
+  www.hcp.ma:
+    connectors: []
+    purpose: "Haut-Commissariat au Plan (Morocco): national accounts (base 2014), employment survey"
+    status: verified
+    dev_network: untested
+    auth: none
+    rate_limit: {requests: 10, per_seconds: 60, basis: conservative_default, note: "Government site; be gentle"}
+    phase: mvp
+    evidence: ["https://www.hcp.ma/Changement-de-l-annee-de-base-des-comptes-nationaux-2014-au-lieu-de-2007_a3106.html"]
+
+  # --- excluded (never call) --------------------------------------------------
+  api.stlouisfed.org:
+    connectors: []
+    purpose: "FRED API: excluded (non-commercial terms); use primary sources"
+    status: verified
+    dev_network: untested
+    auth: "key"
+    rate_limit: {requests: 0, per_seconds: 60, basis: published, note: "Excluded: do not call"}
+    phase: excluded
+    evidence: ["https://fred.stlouisfed.org/docs/api/terms_of_use.html"]
+  api.semanticscholar.org:
+    connectors: []
+    purpose: "Semantic Scholar API: excluded until a commercial licence is in place"
+    status: verified
+    dev_network: untested
+    auth: "key"
+    rate_limit: {requests: 0, per_seconds: 60, basis: published, note: "Excluded: do not call"}
+    phase: excluded
+    evidence: ["https://api.semanticscholar.org/license"]

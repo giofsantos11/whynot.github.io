@@ -1,0 +1,4 @@
+{
+  "error": "Invalid filter",
+  "message": "SYNTHETIC TEST ERROR: Unknown filter field: author_name. Did you mean: authorships.author.id?"
+}

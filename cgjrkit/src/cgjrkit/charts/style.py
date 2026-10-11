@@ -1,8 +1,12 @@
 """House chart style shared by all chart tools.
 
 Charts are produced as Vega-Lite specs (via Altair) so they can be embedded
-interactively in the HTML workbench and rendered to PNG/SVG with
-``vl-convert``. Every chart carries a source line built from provenance.
+interactively in HTML pages (an HTML workbench is planned, not implemented)
+and rendered to PNG/SVG with ``vl-convert``. A chart built from a
+:class:`~cgjrkit.core.provenance.Result` (``charts.render.chart_from_result``,
+or a chart builder given a Result) carries a source line built from its
+provenance; a chart built from a plain DataFrame has none, so attach one with
+:func:`with_source` or ``charts.render.add_footer``.
 """
 
 from __future__ import annotations
@@ -50,10 +54,18 @@ def with_source(chart: alt.TopLevelMixin, source_line: str, note: str = "") -> a
     """Attach the note and source line as footer metadata.
 
     The footer is stored in ``usermeta["cgjrkit_footer"]`` (a list of lines);
-    renderers draw it under the chart and the workbench shows it on the
-    chart card, so the source line never gets separated from the chart.
+    ``charts.render`` draws it under the chart, so the source line never gets
+    separated from the chart. This replaces the whole footer; use
+    ``charts.render.add_footer`` to merge lines into an existing one.
     """
     lines = [line for line in (note, source_line) if line]
     if not lines:
         return chart
-    return chart.properties(usermeta={"cgjrkit_footer": lines})
+    # Merge into the existing usermeta: chart builders keep their own entries there
+    # (cgjrkit_chart, cgjrkit_identity, cgjrkit_provenance), which must survive.
+    existing = getattr(chart, "usermeta", alt.Undefined)
+    if existing is alt.Undefined or existing is None:
+        existing = {}
+    elif hasattr(existing, "to_dict"):
+        existing = existing.to_dict()
+    return chart.properties(usermeta={**dict(existing), "cgjrkit_footer": lines})

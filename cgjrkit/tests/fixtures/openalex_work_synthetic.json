@@ -1,0 +1,55 @@
+{
+  "id": "https://openalex.org/W1000000001",
+  "doi": "https://doi.org/10.5555/synthetic.0001",
+  "title": "SYNTHETIC TEST RECORD: A Work About Structural Change",
+  "display_name": "SYNTHETIC TEST RECORD: A Work About Structural Change",
+  "publication_year": 2000,
+  "type": "article",
+  "cited_by_count": 100,
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {"id": "https://openalex.org/A1000000001", "display_name": "Synthetic Author One", "orcid": null},
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": true,
+      "raw_author_name": "S. Author One",
+      "raw_affiliation_strings": []
+    },
+    {
+      "author_position": "last",
+      "author": {"id": "https://openalex.org/A1000000002", "display_name": "Synthetic Author Two", "orcid": null},
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "S. Author Two",
+      "raw_affiliation_strings": []
+    }
+  ],
+  "primary_location": {
+    "is_oa": true,
+    "landing_page_url": "https://example.org/synthetic/0001",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S1000000001",
+      "display_name": "Synthetic Journal of Tests",
+      "issn_l": null,
+      "issn": null,
+      "is_oa": true,
+      "is_in_doaj": false,
+      "is_core": false,
+      "host_organization": null,
+      "host_organization_name": null,
+      "host_organization_lineage": [],
+      "type": "journal"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true
+  },
+  "open_access": {"is_oa": true, "oa_status": "gold", "oa_url": "https://example.org/synthetic/0001", "any_repository_has_fulltext": false},
+  "is_retracted": false,
+  "updated_date": "2000-01-01T00:00:00.000000"
+}

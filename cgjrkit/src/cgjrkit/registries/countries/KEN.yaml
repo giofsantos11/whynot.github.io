@@ -1,0 +1,49 @@
+# Country registry: Kenya. Lookups for harmonize (fiscal year) and caveats
+# (national-accounts rebasing, PPP base). "status" uses verified/unverified;
+# unknown values are written as "unknown".
+schema_version: 1
+iso3: KEN
+iso2: KE
+name: Kenya
+currency: KES
+report:
+  code: KEN-2026
+  title: "Prosperous Kenya: A Reform Agenda for Boosting Growth and Jobs (World Bank, July 2026)"
+
+fiscal_year:
+  start_month: 7          # 1 July - 30 June
+  end_month: 6
+  label_format: "FY2024/25 = July 2024 - June 2025"
+  status: verified
+  evidence:
+    - "Kenya CGJR figures labelled FY2006/07-2019/20, 2008/09-2024/25, 2016/17-2024/25 (inventory/kenya-replication-inventory.md Figs 6, 8, 18, 19)"
+    - "National Treasury consolidated statements 'for the year ended 30th June' (https://www.treasury.go.ke/wp-content/uploads/2021/04/Central-Government-Consolidated-Financial-Statements.pdf)"
+  notes: "Treasury ratios (Figs 8, 18, 19) divide fiscal-year flows by fiscal-year GDP: build FY GDP with harmonize.quarterly_to_fiscal (exact, KNBS quarterly GDP) or harmonize.calendar_to_fiscal (0.5/0.5 weights)."
+
+statistics_office:
+  name: "Kenya National Bureau of Statistics (KNBS)"
+  host: www.knbs.or.ke
+  status: verified
+  evidence: ["https://www.knbs.or.ke/press-release-on-launch-of-the-revised-national-accounts-estimates/"]
+other_official_hosts:
+  - {name: "National Treasury", host: www.treasury.go.ke, status: verified}
+  - {name: "Central Bank of Kenya", host: www.centralbank.go.ke, status: unverified}
+
+national_accounts:
+  base_year: 2016
+  previous_base_year: 2009
+  rebased_release: "2021 (Economic Survey 2021; revision started 2017)"
+  sna: "2008 SNA"
+  status: verified
+  evidence:
+    - "https://www.knbs.or.ke/press-release-on-launch-of-the-revised-national-accounts-estimates/"
+    - "https://new.knbs.or.ke/highlights-of-the-revision-of-national-accounts/"
+    - "https://blogs.worldbank.org/en/opendata/kenya-s-re-based-national-accounts-myths-facts-and-consequences"
+  notes: "WDI reuses series codes across base years (e.g. NY.GDP.MKTP.KD); replicate older figures from a pinned WDI archive (source 57). KNBS exports in the report stop at 2023, before the 2025 revisions."
+
+ppp:
+  report_ppp_bases: ["2017"]
+  notes:
+    - "Kenya CGJR Figs 14, 22 and 29 use 2017 PPP (GDP per capita, constant 2017 international $); current WDI uses ICP 2021 PPPs, so replicate from a pre-switch WDI vintage."
+    - "Fig 4 uses PWT 10.01 (2017 PPPs); PWT 11.0 uses 2021 PPPs. Fig 29 uses 2017-PPP poverty and GDP per capita."
+    - "Never combine 2017 and 2021 PPP series: harmonize functions raise PPPMixError."

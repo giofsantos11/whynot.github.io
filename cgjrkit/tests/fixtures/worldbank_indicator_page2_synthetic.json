@@ -1,0 +1,8 @@
+[
+  {"page": 2, "pages": 2, "per_page": 3, "total": 5, "sourceid": "2", "lastupdated": "2000-01-01",
+   "_note": "SYNTHETIC fixture (page 2 of 2): World Bank API v2 multi-indicator response format; values are made up, not real data."},
+  [
+    {"indicator": {"id": "SL.UEM.TOTL.ZS", "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"}, "country": {"id": "KE", "value": "Kenya"}, "countryiso3code": "KEN", "date": "2021", "value": 20.0, "unit": "", "obs_status": "", "decimal": 1},
+    {"indicator": {"id": "SL.UEM.TOTL.ZS", "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"}, "country": {"id": "KE", "value": "Kenya"}, "countryiso3code": "KEN", "date": "2020", "value": 10.0, "unit": "", "obs_status": "", "decimal": 1}
+  ]
+]

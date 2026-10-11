@@ -1,0 +1,7 @@
+{
+ "groups": {
+  "ADVEC": {"label": "Synthetic label: Advanced economies"},
+  "SYQ": {"label": "Synthetic label: three-letter test group"}
+ },
+ "api": {"version": "1", "output-method": "json"}
+}

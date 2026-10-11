@@ -1,0 +1,375 @@
+{
+ "meta": {
+  "schema": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/master/data-message/tools/schemas/2.0.0/sdmx-json-data-schema.json",
+  "id": "SYNTHETIC-TEST-FIXTURE",
+  "prepared": "2026-01-01T00:00:00Z",
+  "contentLanguages": [
+   "en"
+  ]
+ },
+ "data": {
+  "dataSets": [
+   {
+    "structure": 0,
+    "action": "Replace",
+    "series": {
+     "0:0:0": {
+      "attributes": [
+       0,
+       0,
+       "1/15/2026",
+       "FY2022/23"
+      ],
+      "observations": {
+       "0": [
+        "50",
+        null,
+        0,
+        null
+       ],
+       "1": [
+        "55",
+        null,
+        0,
+        null
+       ],
+       "2": [
+        "60",
+        null,
+        0,
+        null
+       ],
+       "3": [
+        "65",
+        null,
+        0,
+        null
+       ],
+       "4": [
+        "70",
+        null,
+        0,
+        null
+       ],
+       "5": [
+        "75",
+        null,
+        0,
+        null
+       ],
+       "6": [
+        "80",
+        null,
+        0,
+        null
+       ],
+       "7": [
+        "85",
+        null,
+        0,
+        null
+       ]
+      }
+     },
+     "0:1:0": {
+      "attributes": [
+       0,
+       0,
+       "1/15/2026",
+       "2023"
+      ],
+      "observations": {
+       "0": [
+        "-1",
+        null,
+        0,
+        null
+       ],
+       "1": [
+        "7",
+        null,
+        0,
+        null
+       ],
+       "2": [
+        "5",
+        null,
+        0,
+        null
+       ],
+       "3": [
+        "5",
+        null,
+        0,
+        null
+       ],
+       "4": [
+        "5",
+        null,
+        0,
+        null
+       ],
+       "5": [
+        "5",
+        null,
+        0,
+        null
+       ],
+       "6": [
+        "5",
+        null,
+        0,
+        null
+       ],
+       "7": [
+        "5",
+        null,
+        0,
+        null
+       ],
+       "8": [
+        null,
+        null,
+        0,
+        "NA"
+       ]
+      }
+     }
+    },
+    "dimensionGroupAttributes": {
+     ":0::": [
+      0,
+      null
+     ],
+     ":1::": [
+      0,
+      null
+     ]
+    }
+   }
+  ],
+  "structures": [
+   {
+    "dataSets": [
+     0
+    ],
+    "links": [
+     {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF.RES:WEO(9.0.0)",
+      "title": "Dataflow"
+     },
+     {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IMF.RES:DSD_WEO(9.0.0)",
+      "title": "DataStructureDefinition"
+     }
+    ],
+    "dimensions": {
+     "series": [
+      {
+       "id": "COUNTRY",
+       "keyPosition": 0,
+       "roles": [],
+       "values": [
+        {
+         "id": "KEN"
+        }
+       ]
+      },
+      {
+       "id": "INDICATOR",
+       "keyPosition": 1,
+       "roles": [],
+       "values": [
+        {
+         "id": "GGXWDG_NGDP"
+        },
+        {
+         "id": "NGDP_RPCH"
+        }
+       ]
+      },
+      {
+       "id": "FREQUENCY",
+       "keyPosition": 2,
+       "roles": [
+        "FREQ"
+       ],
+       "values": [
+        {
+         "id": "A"
+        }
+       ]
+      }
+     ],
+     "observation": [
+      {
+       "id": "TIME_PERIOD",
+       "keyPosition": 3,
+       "values": [
+        {
+         "value": "2020"
+        },
+        {
+         "value": "2021"
+        },
+        {
+         "value": "2022"
+        },
+        {
+         "value": "2023"
+        },
+        {
+         "value": "2024"
+        },
+        {
+         "value": "2025"
+        },
+        {
+         "value": "2026"
+        },
+        {
+         "value": "2027"
+        },
+        {
+         "value": "2028"
+        }
+       ]
+      }
+     ]
+    },
+    "measures": {
+     "observation": [
+      {
+       "id": "OBS_VALUE",
+       "roles": []
+      }
+     ]
+    },
+    "attributes": {
+     "dimensionGroup": [
+      {
+       "id": "UNIT",
+       "roles": [],
+       "isMandatory": false,
+       "relationship": {
+        "dimensions": [
+         "INDICATOR"
+        ]
+       },
+       "values": [
+        {
+         "id": "PT"
+        }
+       ]
+      },
+      {
+       "id": "TRANSFORMATION",
+       "roles": [],
+       "isMandatory": false,
+       "relationship": {
+        "dimensions": [
+         "INDICATOR"
+        ]
+       },
+       "values": []
+      }
+     ],
+     "series": [
+      {
+       "id": "SCALE",
+       "roles": [],
+       "isMandatory": false,
+       "relationship": {
+        "dimensions": [
+         "COUNTRY",
+         "INDICATOR",
+         "FREQUENCY"
+        ]
+       },
+       "values": [
+        {
+         "id": "0"
+        }
+       ]
+      },
+      {
+       "id": "DECIMALS_DISPLAYED",
+       "roles": [],
+       "isMandatory": false,
+       "relationship": {
+        "dimensions": [
+         "COUNTRY",
+         "INDICATOR",
+         "FREQUENCY"
+        ]
+       },
+       "values": [
+        {
+         "id": "3"
+        }
+       ]
+      },
+      {
+       "id": "COUNTRY_UPDATE_DATE",
+       "roles": [],
+       "isMandatory": false,
+       "relationship": {
+        "dimensions": [
+         "COUNTRY",
+         "INDICATOR",
+         "FREQUENCY"
+        ]
+       }
+      },
+      {
+       "id": "LATEST_ACTUAL_ANNUAL_DATA",
+       "roles": [],
+       "isMandatory": false,
+       "relationship": {
+        "dimensions": [
+         "COUNTRY",
+         "INDICATOR",
+         "FREQUENCY"
+        ]
+       }
+      }
+     ],
+     "observation": [
+      {
+       "id": "PRECISION",
+       "roles": [],
+       "isMandatory": false,
+       "relationship": {
+        "observation": {}
+       },
+       "values": []
+      },
+      {
+       "id": "DERIVATION_TYPE",
+       "roles": [],
+       "isMandatory": false,
+       "relationship": {
+        "observation": {}
+       },
+       "values": [
+        {
+         "id": "M"
+        }
+       ]
+      },
+      {
+       "id": "STATUS",
+       "roles": [],
+       "isMandatory": false,
+       "relationship": {
+        "observation": {}
+       },
+       "values": []
+      }
+     ]
+    },
+    "annotations": []
+   }
+  ]
+ }
+}

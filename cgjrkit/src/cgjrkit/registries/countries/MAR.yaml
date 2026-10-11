@@ -1,0 +1,44 @@
+# Country registry: Morocco. "status" uses verified/unverified;
+# unknown values are written as "unknown".
+schema_version: 1
+iso3: MAR
+iso2: MA
+name: Morocco
+currency: MAD
+report:
+  code: MAR-2026
+  title: "Morocco. Scaling the Atlas: Growth and Jobs for a Prosperous Morocco (World Bank, April 2026)"
+
+fiscal_year:
+  start_month: 1          # January - December (calendar year)
+  end_month: 12
+  label_format: "calendar year (2024)"
+  status: verified
+  evidence:
+    - "World Bank Country Partnership Framework FY19-FY24: 'Kingdom of Morocco Government Fiscal Year January 1 - December 31'"
+    - "CABRI country page: fiscal year January-December (https://www.cabri-sbo.org/en/our-work/adm/countries/morocco)"
+  notes: "Fiscal year equals the calendar year; no conversion needed. Budget framework: 2015 Organic Budget Law."
+
+statistics_office:
+  name: "Haut-Commissariat au Plan (HCP)"
+  host: www.hcp.ma
+  status: verified
+  evidence: ["https://www.hcp.ma/Changement-de-l-annee-de-base-des-comptes-nationaux-2014-au-lieu-de-2007_a3106.html"]
+other_official_hosts:
+  - {name: "Bank Al-Maghrib", host: www.bkam.ma, status: unverified}
+  - {name: "Ministry of Economy and Finance", host: www.finances.gov.ma, status: unverified}
+
+national_accounts:
+  base_year: 2014
+  previous_base_year: 2007
+  rebased_release: "19 April 2022"
+  sna: "2008 SNA"
+  status: verified
+  evidence:
+    - "https://www.hcp.ma/Changement-de-l-annee-de-base-des-comptes-nationaux-2014-au-lieu-de-2007_a3106.html"
+  notes: "Nominal GDP 2014 revised up 8.2% (1,001.5 vs 925.4 bn MAD). Older WDI vintages carry the 2007 base."
+
+ppp:
+  report_ppp_bases: []
+  notes:
+    - "No PPP-based chart was found in the figure inventory for the Morocco report; if one is added, record the PPP base (2017 or 2021) in the unit label."

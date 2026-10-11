@@ -57,3 +57,20 @@ def test_result_source_line_and_merge():
     assert "World Development Indicators (2026-09)" in m.source_line()
     assert len(m.caveats) == 1 and not m.blocked
     assert hash_frame(df) == hash_frame(df.iloc[::-1])
+
+
+def test_source_line_skips_empty_cites():
+    empty = Result(data=pd.DataFrame(), provenance=[Provenance(source="")])
+    assert empty.source_line() == ""
+    mixed = Result(data=pd.DataFrame(), provenance=[Provenance(source=""), Provenance(source="wb", citation="WDI")])
+    assert mixed.source_line() == "Source: WDI."
+
+
+def test_ppp_base_reads_both_word_orders():
+    from cgjrkit.core.schema import ppp_base
+
+    assert ppp_base("constant 2021 international $ (PPP 2021)") == "2021"
+    assert ppp_base("GDP per capita (2017 PPP)") == "2017"
+    assert ppp_base("GDP, PPP (constant 2017 international $)") == "2017"
+    assert ppp_base("current international $ (PPP)") == "unknown"
+    assert ppp_base("constant 2015 US$") is None

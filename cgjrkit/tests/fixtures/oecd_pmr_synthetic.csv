@@ -1,0 +1,14 @@
+STRUCTURE,STRUCTURE_ID,STRUCTURE_NAME,ACTION,REF_AREA,Reference area,MEASURE,Measure,FREQ,Frequency of observation,TIME_PERIOD,Time period,OBS_VALUE,Observation value,OBS_STATUS,Observation status,UNIT_MULT,Unit multiplier,DECIMALS,Decimals
+DATAFLOW,OECD.ECO.GCRD:DSD_PMR@DF_PMR(1.3),Product Market Regulation (synthetic),I,ITA,Italy,PMR,Product market regulation,A,Annual,2013,,2.0,,A,Normal value,0,Units,2,Two
+DATAFLOW,OECD.ECO.GCRD:DSD_PMR@DF_PMR(1.3),Product Market Regulation (synthetic),I,ITA,Italy,PMR,Product market regulation,A,Annual,2018,,1.5,,A,Normal value,0,Units,2,Two
+DATAFLOW,OECD.ECO.GCRD:DSD_PMR@DF_PMR(1.3),Product Market Regulation (synthetic),I,ITA,Italy,PMR,Product market regulation,A,Annual,2023,,1.4,,A,Normal value,0,Units,2,Two
+DATAFLOW,OECD.ECO.GCRD:DSD_PMR@DF_PMR(1.3),Product Market Regulation (synthetic),I,ITA,Italy,BARRIER_TRADE,Barriers to trade and investment,A,Annual,2018,,0.75,,A,Normal value,0,Units,2,Two
+DATAFLOW,OECD.ECO.GCRD:DSD_PMR@DF_PMR(1.3),Product Market Regulation (synthetic),I,MEX,Mexico,PMR,Product market regulation,A,Annual,2013,,2.5,,A,Normal value,0,Units,2,Two
+DATAFLOW,OECD.ECO.GCRD:DSD_PMR@DF_PMR(1.3),Product Market Regulation (synthetic),I,MEX,Mexico,PMR,Product market regulation,A,Annual,2018,,2.0,,A,Normal value,0,Units,2,Two
+DATAFLOW,OECD.ECO.GCRD:DSD_PMR@DF_PMR(1.3),Product Market Regulation (synthetic),I,MEX,Mexico,PMR,Product market regulation,A,Annual,2023,,1.9,,A,Normal value,0,Units,2,Two
+DATAFLOW,OECD.ECO.GCRD:DSD_PMR@DF_PMR(1.3),Product Market Regulation (synthetic),I,MEX,Mexico,BARRIER_TRADE,Barriers to trade and investment,A,Annual,2018,,1.0,,A,Normal value,0,Units,2,Two
+DATAFLOW,OECD.ECO.GCRD:DSD_PMR@DF_PMR(1.3),Product Market Regulation (synthetic),I,OECD,OECD - Average,PMR,Product market regulation,A,Annual,2013,,2.2,,A,Normal value,0,Units,2,Two
+DATAFLOW,OECD.ECO.GCRD:DSD_PMR@DF_PMR(1.3),Product Market Regulation (synthetic),I,OECD,OECD - Average,PMR,Product market regulation,A,Annual,2018,,1.6,,A,Normal value,0,Units,2,Two
+DATAFLOW,OECD.ECO.GCRD:DSD_PMR@DF_PMR(1.3),Product Market Regulation (synthetic),I,OECD,OECD - Average,PMR,Product market regulation,A,Annual,2023,,1.5,,A,Normal value,0,Units,2,Two
+DATAFLOW,OECD.ECO.GCRD:DSD_PMR@DF_PMR(1.3),Product Market Regulation (synthetic),I,OECD,OECD - Average,BARRIER_TRADE,Barriers to trade and investment,A,Annual,2018,,0.8,,A,Normal value,0,Units,2,Two
+DATAFLOW,OECD.ECO.GCRD:DSD_PMR@DF_PMR(1.3),Product Market Regulation (synthetic),I,ITA,Italy,FDI_INDEX,FDI barriers,A,Annual,2023,,,,M,Missing value,0,Units,2,Two

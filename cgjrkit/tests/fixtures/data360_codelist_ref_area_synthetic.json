@@ -1,0 +1,17 @@
+{
+ "_note": "SYNTHETIC fixture. Layout follows GET /data360/codelist?type=... as read by worldbank/data360-mcp (value[].Id/Name).",
+ "value": [
+  {
+   "Id": "KEN",
+   "Name": "Kenya"
+  },
+  {
+   "Id": "UGA",
+   "Name": "Uganda"
+  },
+  {
+   "Id": "SSF",
+   "Name": "Sub-Saharan Africa"
+  }
+ ]
+}

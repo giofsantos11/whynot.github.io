@@ -1,0 +1,44 @@
+{
+ "data": {
+  "dataflows": [
+   {
+    "id": "WEO",
+    "agencyID": "IMF.RES",
+    "version": "9.0.0",
+    "name": "World Economic Outlook (WEO)",
+    "annotations": [
+     {
+      "id": "lastUpdatedAt",
+      "value": "2026-01-01T00:00:00Z"
+     }
+    ]
+   },
+   {
+    "id": "WEO",
+    "agencyID": "IMF.RES",
+    "version": "6.0.0",
+    "name": "World Economic Outlook (WEO)"
+   },
+   {
+    "id": "WEO_2025_OCT_VINTAGE",
+    "agencyID": "IMF.RES",
+    "version": "1.0.0",
+    "name": "Synthetic stub: WEO October 2025 vintage"
+   },
+   {
+    "id": "PCPS",
+    "agencyID": "IMF.RES",
+    "version": "9.0.0",
+    "name": "Primary Commodity Price System (PCPS)"
+   }
+  ]
+ },
+ "meta": {
+  "schema": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/master/metadata-message/tools/schemas/2.0.0/sdmx-json-metadata-schema.json",
+  "id": "SYNTHETIC-TEST-FIXTURE",
+  "prepared": "2026-01-01T00:00:00Z",
+  "contentLanguages": [
+   "en"
+  ]
+ }
+}

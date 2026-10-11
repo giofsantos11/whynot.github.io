@@ -1,0 +1,15 @@
+[
+  {"page": 1, "pages": 1, "per_page": 10000, "total": 9, "sourceid": "2", "lastupdated": "2000-01-01",
+   "_note": "SYNTHETIC fixture: World Bank API v2 indicator response format (docs/apis/worldbank.md); values are made up, not real data."},
+  [
+    {"indicator": {"id": "NY.GDP.MKTP.KD.ZG", "value": "GDP growth (annual %)"}, "country": {"id": "KE", "value": "Kenya"}, "countryiso3code": "KEN", "date": "2021", "value": 2.0, "unit": "", "obs_status": "F", "decimal": 1},
+    {"indicator": {"id": "NY.GDP.MKTP.KD.ZG", "value": "GDP growth (annual %)"}, "country": {"id": "KE", "value": "Kenya"}, "countryiso3code": "KEN", "date": "2020", "value": -1.0, "unit": "", "obs_status": "", "decimal": 1},
+    {"indicator": {"id": "NY.GDP.MKTP.KD.ZG", "value": "GDP growth (annual %)"}, "country": {"id": "KE", "value": "Kenya"}, "countryiso3code": "KEN", "date": "2019", "value": 1.0, "unit": "", "obs_status": "", "decimal": 1},
+    {"indicator": {"id": "NY.GDP.MKTP.KD.ZG", "value": "GDP growth (annual %)"}, "country": {"id": "XN", "value": "Lower middle income"}, "countryiso3code": "LMC", "date": "2021", "value": 4.0, "unit": "", "obs_status": "", "decimal": 1},
+    {"indicator": {"id": "NY.GDP.MKTP.KD.ZG", "value": "GDP growth (annual %)"}, "country": {"id": "XN", "value": "Lower middle income"}, "countryiso3code": "LMC", "date": "2020", "value": null, "unit": "", "obs_status": "", "decimal": 1},
+    {"indicator": {"id": "NY.GDP.MKTP.KD.ZG", "value": "GDP growth (annual %)"}, "country": {"id": "XN", "value": "Lower middle income"}, "countryiso3code": "LMC", "date": "2019", "value": 3.0, "unit": "", "obs_status": "", "decimal": 1},
+    {"indicator": {"id": "NY.GDP.MKTP.KD.ZG", "value": "GDP growth (annual %)"}, "country": {"id": "ZF", "value": "Sub-Saharan Africa (excluding high income)"}, "countryiso3code": "SSA", "date": "2021", "value": 5.0, "unit": "", "obs_status": "", "decimal": 1},
+    {"indicator": {"id": "NY.GDP.MKTP.KD.ZG", "value": "GDP growth (annual %)"}, "country": {"id": "ZF", "value": "Sub-Saharan Africa (excluding high income)"}, "countryiso3code": "SSA", "date": "2020", "value": -2.0, "unit": "", "obs_status": "", "decimal": 1},
+    {"indicator": {"id": "NY.GDP.MKTP.KD.ZG", "value": "GDP growth (annual %)"}, "country": {"id": "ZF", "value": "Sub-Saharan Africa (excluding high income)"}, "countryiso3code": "SSA", "date": "2019", "value": 6.0, "unit": "", "obs_status": "", "decimal": 1}
+  ]
+]

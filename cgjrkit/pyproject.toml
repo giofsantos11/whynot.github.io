@@ -15,9 +15,11 @@ dependencies = [
     "scipy>=1.12",
     "statsmodels>=0.14",
     "openpyxl>=3.1",
-    "altair>=5.3",
+    "xlrd>=2.0",            # Bruegel REER workbook is legacy .xls (pandas engine="xlrd")
+    "py7zr>=1.0",           # UNCTADstat bulk files are 7z archives (LGPL-2.1-or-later; imported lazily)
+    "altair>=5.5",          # charts.render uses the alt.theme API added in Altair 5.5
     "vl-convert-python>=1.5",
-    "mcp>=1.2",
+    "mcp>=2.3,<3",          # mcp_server uses the mcp 2.x MCPServer API (FastMCP was removed in 2.0)
 ]
 
 [project.optional-dependencies]

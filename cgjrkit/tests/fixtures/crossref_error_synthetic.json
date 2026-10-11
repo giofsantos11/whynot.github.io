@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "message-type": "validation-failure",
+  "message": [
+    {"value": "synthetic-bad-filter", "message": "SYNTHETIC TEST ERROR: Filter synthetic-bad-filter specified but there is no such filter for this route.", "type": "unknown-filter"}
+  ]
+}

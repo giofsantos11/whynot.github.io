@@ -1,0 +1,9 @@
+[
+  {"page": 1, "pages": 1, "per_page": "1000", "total": 3,
+   "_note": "SYNTHETIC fixture: World Bank API v2 sources format; list shortened, dates made up."},
+  [
+    {"id": "2", "lastupdated": "2000-01-01", "name": "World Development Indicators", "code": "WDI", "description": "", "url": "", "dataavailability": "Y", "metadataavailability": "Y", "concepts": "3"},
+    {"id": "3", "lastupdated": "2000-01-01", "name": "Worldwide Governance Indicators", "code": "WGI", "description": "", "url": "", "dataavailability": "Y", "metadataavailability": "Y", "concepts": "3"},
+    {"id": "57", "lastupdated": "2000-01-01", "name": "WDI Database Archives", "code": "WDA", "description": "", "url": "", "dataavailability": "Y", "metadataavailability": "N", "concepts": "4"}
+  ]
+]

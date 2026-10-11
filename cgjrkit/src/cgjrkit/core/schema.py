@@ -104,5 +104,9 @@ def ppp_base(unit: str) -> str | None:
 
     if not unit or "ppp" not in unit.lower():
         return None
-    m = re.search(r"ppp\s*\(?\s*(19|20)(\d{2})", unit, flags=re.I) or re.search(r"(19|20)(\d{2})\s*(?:international|intl)", unit, flags=re.I)
+    m = (
+        re.search(r"ppp\s*\(?\s*(19|20)(\d{2})", unit, flags=re.I)
+        or re.search(r"(19|20)(\d{2})\s*(?:international|intl)", unit, flags=re.I)
+        or re.search(r"(19|20)(\d{2})\s*ppp", unit, flags=re.I)  # "(2021 PPP)", common in World Bank labels
+    )
     return (m.group(1) + m.group(2)) if m else "unknown"

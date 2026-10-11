@@ -1,0 +1,23 @@
+{
+ "pageNumber": 1,
+ "pages": 1,
+ "nextPage": null,
+ "data": [
+  {
+   "id": 404,
+   "name": "Kenya",
+   "iso2": "KE",
+   "iso3": "KEN",
+   "longitude": 1.0,
+   "latitude": 1.0
+  },
+  {
+   "id": 900,
+   "name": "World",
+   "iso2": "",
+   "iso3": "",
+   "longitude": null,
+   "latitude": null
+  }
+ ]
+}

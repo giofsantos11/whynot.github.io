@@ -1,0 +1,29 @@
+{
+ "indicators": {
+  "GGXWDG_NGDP": {
+   "label": "Synthetic label: government debt",
+   "description": "Synthetic description for tests.",
+   "source": "World Economic Outlook (April 2026)",
+   "unit": "Percent of GDP",
+   "dataset": "WEO"
+  },
+  "NGDP_RPCH": {
+   "label": "Synthetic label: real GDP growth",
+   "description": "Synthetic description for tests.",
+   "source": "World Economic Outlook (April 2026)",
+   "unit": "Annual percent change",
+   "dataset": "WEO"
+  },
+  "rev": {
+   "label": "Synthetic label: revenue",
+   "description": "Synthetic.",
+   "source": "Fiscal Monitor (April 2026)",
+   "unit": "Percent of GDP",
+   "dataset": "FM"
+  }
+ },
+ "api": {
+  "version": "1",
+  "output-method": "json"
+ }
+}

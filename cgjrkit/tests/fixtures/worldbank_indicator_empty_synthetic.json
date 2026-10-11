@@ -1,0 +1,5 @@
+[
+  {"page": 1, "pages": 0, "per_page": 10000, "total": 0, "sourceid": "2", "lastupdated": "2000-01-01",
+   "_note": "SYNTHETIC fixture: empty World Bank API v2 indicator response (rows are null)."},
+  null
+]

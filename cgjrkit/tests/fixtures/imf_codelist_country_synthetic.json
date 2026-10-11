@@ -1,0 +1,37 @@
+{
+ "data": {
+  "codelists": [
+   {
+    "id": "CL_WEO_COUNTRY",
+    "agencyID": "IMF.RES",
+    "version": "1.0.0",
+    "name": "Synthetic codelist",
+    "codes": [
+     {
+      "id": "KEN",
+      "name": "Kenya",
+      "names": {
+       "en": "Kenya"
+      }
+     },
+     {
+      "id": "UGA",
+      "name": "Uganda"
+     },
+     {
+      "id": "G001",
+      "name": "World"
+     }
+    ]
+   }
+  ]
+ },
+ "meta": {
+  "schema": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/master/metadata-message/tools/schemas/2.0.0/sdmx-json-metadata-schema.json",
+  "id": "SYNTHETIC-TEST-FIXTURE",
+  "prepared": "2026-01-01T00:00:00Z",
+  "contentLanguages": [
+   "en"
+  ]
+ }
+}

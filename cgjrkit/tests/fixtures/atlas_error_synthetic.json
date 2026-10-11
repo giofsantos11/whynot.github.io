@@ -1,0 +1,14 @@
+{
+ "errors": [
+  {
+   "message": "Cannot query field \"eciRankSynthetic\" on type \"CountryYear\".",
+   "locations": [
+    {
+     "line": 1,
+     "column": 80
+    }
+   ]
+  }
+ ],
+ "data": null
+}

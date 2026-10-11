@@ -1,0 +1,46 @@
+# Country registry: Indonesia. "status" uses verified/unverified;
+# unknown values are written as "unknown".
+schema_version: 1
+iso3: IDN
+iso2: ID
+name: Indonesia
+currency: IDR
+report:
+  code: IDN-2026
+  title: "Indonesia Country Growth and Jobs Report. Running Faster, for Longer: Structural Transformation, Productivity, and Good Jobs (World Bank, January 2026)"
+
+fiscal_year:
+  start_month: 1          # January - December (calendar year)
+  end_month: 12
+  label_format: "calendar year (2024)"
+  status: verified
+  evidence:
+    - "World Bank program documents for Indonesia list 'Government Fiscal Year January 1 - December 31' (e.g. Fiscal Reform DPLs 2016-2019, UHC DPL P500689, 2023)"
+    - "Ministry of Finance APBN laws are annual, one per calendar year (https://djpb.kemenkeu.go.id/portal/id/data-publikasi/data/undang-undang-apbn.html)"
+  notes: "Calendar-year budget since 2001 (April-March before; not needed for current series)."
+
+statistics_office:
+  name: "BPS-Statistics Indonesia (Badan Pusat Statistik)"
+  host: www.bps.go.id
+  status: verified
+  evidence: ["https://www.bps.go.id/en/news/2014/12/31/103/perubahan-tahun-dasar-pdb-indonesia-berbasis-sna-2008.html"]
+other_official_hosts:
+  - {name: "BPS Web API", host: webapi.bps.go.id, status: unverified}
+  - {name: "Bank Indonesia", host: www.bi.go.id, status: unverified}
+  - {name: "Ministry of Finance", host: www.kemenkeu.go.id, status: unverified}
+
+national_accounts:
+  base_year: 2010
+  previous_base_year: 2000
+  rebased_release: "February 2015 (with Q4 2014 GDP)"
+  sna: "2008 SNA"
+  status: verified
+  evidence:
+    - "https://www.bps.go.id/en/news/2014/12/31/103/perubahan-tahun-dasar-pdb-indonesia-berbasis-sna-2008.html"
+  notes: "No GDP rebasing to a newer base year was found in an October 2026 search; check BPS before relying on 2010 prices for recent data."
+
+ppp:
+  report_ppp_bases: ["2017"]
+  notes:
+    - "The report uses poverty at US$3.65 a day (2017 PPP); PIP now defaults to 2021 PPP lines ($3.00 / $4.20 / $8.30)."
+    - "GDP per capita relative to the USA (Fig 1.1) is quoted in US$ at 2015 prices in the text; check the source line before choosing a PPP or constant-US$ series."

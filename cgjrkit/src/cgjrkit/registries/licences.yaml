@@ -1,0 +1,370 @@
+# Licence register: one entry per source (keys match the connectors' `source`
+# attribute where a connector exists). Input for the "licensed data" caveat.
+#
+# Status letters follow inventory/build-plan.md section 4:
+#   V = verified on an official or primary page
+#   I = inferred (e.g. commercial use follows from CC BY)
+#   U = unknown; ask the provider before commercial delivery
+#
+# Fields
+#   name                   human-readable source name
+#   licence                licence or terms as stated by the provider
+#   licence_status         V | I | U
+#   commercial_use         yes | yes_with_attribution | restricted | no | unknown
+#   commercial_use_status  V | I | U
+#   third_party_flags      true when some series carry third-party terms (check per series)
+#   caveat                 suggested severity of the licence caveat: none | info | warn | block
+#   citation               default source line
+#   notes                  what to do
+#   evidence               URLs or docs
+schema_version: 1
+
+sources:
+  # --- macro, labour, population (plan 4.1) -----------------------------------
+  worldbank:
+    name: "World Bank Indicators API v2 (WDI, WGI, GFDD, WDI archives)"
+    licence: "CC BY 4.0 (World Bank terms of use for datasets)"
+    licence_status: V
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: true
+    caveat: info
+    citation: "World Bank, World Development Indicators"
+    notes: "Some indicators come from third parties with their own terms, flagged in indicator metadata (V). Attribute the World Bank and the dataset; do not imply endorsement."
+    evidence: ["https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets", "docs/apis/worldbank.md"]
+  data360:
+    name: "World Bank Data360 API"
+    licence: "CC BY 4.0 (OpenAPI info.license); per-indicator licence in metadata"
+    licence_status: V
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: true
+    caveat: info
+    citation: "World Bank Data360"
+    notes: "The connector reads each indicator's license[] and warns for anything that is not CC BY."
+    evidence: ["docs/apis/data360.md"]
+  imf:
+    name: "IMF SDMX API and DataMapper (WEO, BOP, ex-IFS)"
+    licence: "IMF Copyright and Usage terms (effective 11 Oct 2024)"
+    licence_status: V
+    commercial_use: unknown
+    commercial_use_status: U
+    third_party_flags: false
+    caveat: warn
+    citation: "IMF, World Economic Outlook database"
+    notes: "Systematic downloading or substantial reuse needs written permission (V). Ask copyright@imf.org before bulk caching or commercial delivery."
+    evidence: ["https://www.imf.org/en/About/copyright-and-terms", "docs/apis/imf.md"]
+  ilostat:
+    name: "ILOSTAT (bulk service and SDMX)"
+    licence: "CC BY 4.0 for databases and datasets published from 3 May 2023 (ILO open-access policy)"
+    licence_status: V
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: false
+    caveat: warn
+    citation: "ILOSTAT, International Labour Organization (ILO)"
+    notes: "The Rilostat README still says non-commercial; confirm with the ILO before commercial delivery."
+    evidence: ["https://www.ilo.org/node/9321", "docs/apis/ilostat.md"]
+  pwt:
+    name: "Penn World Table 10.01 / 11.0"
+    licence: "CC BY 4.0"
+    licence_status: V
+    commercial_use: yes_with_attribution
+    commercial_use_status: V
+    third_party_flags: false
+    caveat: none
+    citation: "Penn World Table (Feenstra, Inklaar and Timmer 2015)"
+    notes: "Cite Feenstra, Inklaar and Timmer (2015), American Economic Review 105(10). PWT 11.0 uses ICP 2021 PPPs, 10.01 uses 2017 PPPs."
+    evidence: ["https://www.rug.nl/ggdc/blog/penn-world-table-version-11-0-is-published", "docs/apis/pwt.md"]
+  wpp:
+    name: "UN World Population Prospects 2024"
+    licence: "CC BY 3.0 IGO (download catalogue footer; publications)"
+    licence_status: V
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: false
+    caveat: info
+    citation: "United Nations, Department of Economic and Social Affairs, Population Division (2024). World Population Prospects 2024, Online Edition"
+    notes: "Terms of the data portal API pages are not verified (U). Do not imply UN endorsement."
+    evidence: ["docs/apis/wpp.md"]
+  unido:
+    name: "UNIDO INDSTAT"
+    licence: "CC BY 4.0 (since 2022)"
+    licence_status: V
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: false
+    caveat: none
+    citation: "UNIDO, INDSTAT"
+    notes: "Use UNIDO's own copy; mirrors such as ERF's are non-commercial."
+    evidence: ["https://unido.org/node/250"]
+  etd:
+    name: "GGDC/UNU-WIDER Economic Transformation Database"
+    licence: "CC BY 4.0"
+    licence_status: V
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: false
+    caveat: none
+    citation: "GGDC/UNU-WIDER Economic Transformation Database (Kruse et al. 2022)"
+    notes: "Data to 2018; country coverage of MKD, MAR, PHL, IDN not checked (U)."
+    evidence: ["https://www.rug.nl/ggdc/structuralchange/etd/"]
+  bruegel:
+    name: "Bruegel real effective exchange rate database"
+    licence: "Free for any purpose with attribution, no endorsement implied (Bruegel general data policy)"
+    licence_status: V
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: false
+    caveat: info
+    citation: "Bruegel REER database (Darvas 2012, 2021)"
+    notes: "Terms specific to the REER file are unverified (U); the file is replaced in place, so snapshot it."
+    evidence: ["https://www.bruegel.org/publications/datasets/real-effective-exchange-rates-for-178-countries-a-new-database", "docs/apis/bruegel.md"]
+  ted:
+    name: "Conference Board Total Economy Database"
+    licence: "Unknown (registration required)"
+    licence_status: U
+    commercial_use: unknown
+    commercial_use_status: U
+    third_party_flags: false
+    caveat: warn
+    citation: "The Conference Board Total Economy Database"
+    notes: "Needed only for North Macedonia Fig 4; read the terms before use."
+    evidence: ["inventory/build-plan.md section 4.1"]
+  fred:
+    name: "FRED (Federal Reserve Bank of St. Louis)"
+    licence: "Non-commercial, educational and personal use; some series copyrighted"
+    licence_status: V
+    commercial_use: "no"
+    commercial_use_status: V
+    third_party_flags: true
+    caveat: block
+    citation: "Federal Reserve Bank of St. Louis, FRED"
+    notes: "Excluded: use the primary sources instead."
+    evidence: ["https://fred.stlouisfed.org/docs/api/terms_of_use.html"]
+
+  # --- trade, policy indices, firms, poverty (plan 4.2) -----------------------
+  comtrade:
+    name: "UN Comtrade"
+    licence: "UN copyright; internal use only; re-dissemination needs UNSD permission or Premium Pro"
+    licence_status: V
+    commercial_use: restricted
+    commercial_use_status: U
+    third_party_flags: false
+    caveat: warn
+    citation: "United Nations Comtrade Database"
+    notes: "Derived analysis in paid work is unknown: ask comtrade@un.org. Never ship raw extracts; BACI is the MVP default."
+    evidence: ["https://shop.un.org/de/node/55", "https://github.com/uncomtrade/comtradeapicall"]
+  baci:
+    name: "CEPII BACI"
+    licence: "Etalab Open Licence 2.0"
+    licence_status: V
+    commercial_use: yes_with_attribution
+    commercial_use_status: V
+    third_party_flags: false
+    caveat: none
+    citation: "CEPII BACI (Gaulier and Zignago, 2010)"
+    notes: "Default source for HHI and RCA. Pin the version string (e.g. 202601)."
+    evidence: ["https://www.cepii.fr/DATA_DOWNLOAD/baci/doc/baci_webpage.html"]
+  wits:
+    name: "WITS / TRAINS"
+    licence: "WITS terms; Comtrade data reached through WITS stays internal-use-only; TRAINS terms unknown"
+    licence_status: V
+    commercial_use: restricted
+    commercial_use_status: U
+    third_party_flags: true
+    caveat: warn
+    citation: "World Bank WITS; UNCTAD TRAINS"
+    notes: "Tariff (TRAINS) terms not verified (U)."
+    evidence: ["https://wits.worldbank.org/wits/registration/TermsAndCondtions.aspx"]
+  unctad:
+    name: "UNCTADstat (FDI)"
+    licence: "Unknown in the plan (U); the unctad connector records CC BY 3.0 IGO from the UNCTADstat terms"
+    licence_status: U
+    commercial_use: unknown
+    commercial_use_status: U
+    third_party_flags: false
+    caveat: warn
+    citation: "UNCTADstat"
+    notes: "Revised every year with the World Investment Report: pin the file hash. Confirm the licence (see docs/apis/unctad.md)."
+    evidence: ["inventory/build-plan.md section 4.2", "docs/apis/unctad.md"]
+  atlas:
+    name: "Harvard Atlas of Economic Complexity"
+    licence: "Research and educational use (llms.txt)"
+    licence_status: V
+    commercial_use: unknown
+    commercial_use_status: U
+    third_party_flags: true
+    caveat: warn
+    citation: "Growth Lab at Harvard University, The Atlas of Economic Complexity"
+    notes: "Cross-check only; compute ECI from BACI with ecomplexity. Data derive from Comtrade. Ask the Growth Lab about commercial use."
+    evidence: ["https://atlas.hks.harvard.edu/llms.txt"]
+  oecd:
+    name: "OECD SDMX (PMR, STRI, FDIRI, TiVA)"
+    licence: "CC BY 4.0 for content from 1 July 2024 (open-by-default policy)"
+    licence_status: I
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: false
+    caveat: info
+    citation: "OECD Data Explorer"
+    notes: "Verified for publications (V); assumed for data (I). Older content 'similar to CC BY'."
+    evidence: ["https://www.oecd.org/en/about/oecd-open-by-default-policy.html"]
+  oecd_wbg_pmr:
+    name: "OECD-WBG Product Market Regulation indicators"
+    licence: "Unknown"
+    licence_status: U
+    commercial_use: unknown
+    commercial_use_status: U
+    third_party_flags: false
+    caveat: warn
+    citation: "OECD-WBG PMR Database"
+    notes: "Values before 2018 are not comparable with the 2018/23 questionnaire (I)."
+    evidence: ["https://datacatalog.worldbank.org/search/dataset/0066434/oecd-wbg-pmr-indicators-1998-2024"]
+  wb_wto_stri:
+    name: "World Bank-WTO Services Trade Restrictiveness Index"
+    licence: "Unknown"
+    licence_status: U
+    commercial_use: unknown
+    commercial_use_status: U
+    third_party_flags: false
+    caveat: warn
+    citation: "World Bank-WTO Services Trade Policy Database"
+    notes: "Cannot be spliced with the old 2008-11 World Bank STRI."
+    evidence: ["https://data.wto.org/dataset/stpd"]
+  bready:
+    name: "World Bank B-READY"
+    licence: "Unknown (World Bank default is CC BY 4.0, I)"
+    licence_status: U
+    commercial_use: unknown
+    commercial_use_status: U
+    third_party_flags: false
+    caveat: info
+    citation: "World Bank, Business Ready (B-READY)"
+    notes: "Not comparable with Doing Business."
+    evidence: ["https://www.worldbank.org/en/businessready/data"]
+  lpi:
+    name: "Logistics Performance Index (WDI LP.LPI.*; Data360 WB_LPI_20)"
+    licence: "CC BY 4.0"
+    licence_status: V
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: false
+    caveat: none
+    citation: "World Bank, Logistics Performance Index"
+    notes: "LPI 2.0 (shipment tracking, 2023-24) is a series break from the survey LPI."
+    evidence: ["https://datacatalog.worldbank.org/search/dataset/0038649/logistics-performance-index"]
+  es_aggregates:
+    name: "Enterprise Surveys indicators (Data360 WB_ES)"
+    licence: "CC BY 4.0 (search snippet of the Data360 page)"
+    licence_status: V
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: false
+    caveat: none
+    citation: "World Bank Enterprise Surveys"
+    notes: "Aggregates only; standard errors and n included."
+    evidence: ["https://www.enterprisesurveys.org/en/data"]
+  entrepreneurship:
+    name: "World Bank Entrepreneurship Database (WDI IC.BUS.NREG, IC.BUS.NDNS.ZS)"
+    licence: "CC BY 4.0"
+    licence_status: V
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: false
+    caveat: none
+    citation: "World Bank Entrepreneurship Database"
+    notes: "Counts limited liability companies only (V)."
+    evidence: ["https://www.worldbank.org/en/programs/entrepreneurship"]
+  pip:
+    name: "Poverty and Inequality Platform (PIP)"
+    licence: "Unknown; assumed CC BY 4.0 under World Bank dataset terms (I)"
+    licence_status: U
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: false
+    caveat: info
+    citation: "World Bank, Poverty and Inequality Platform (PIP)"
+    notes: "PIP-specific terms unverified. 2021 PPP ($3.00 line) and 2017 PPP ($2.15 line) series are not comparable."
+    evidence: ["docs/apis/pip.md"]
+
+  # --- literature (plan 4.3) -----------------------------------------------------
+  wb_documents_api:
+    name: "World Bank Documents & Reports API"
+    licence: "WB terms and conditions: the APIs may not be used for commercial uses of non-dataset Materials"
+    licence_status: V
+    commercial_use: "no"
+    commercial_use_status: V
+    third_party_flags: false
+    caveat: block
+    citation: "World Bank Documents & Reports"
+    notes: "Use only after legal sign-off; until then use normal links."
+    evidence: ["https://www.worldbank.org/ext/en/legal/terms-conditions"]
+  okr:
+    name: "World Bank Open Knowledge Repository"
+    licence: "CC BY 3.0 IGO (some items NC-ND)"
+    licence_status: V
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: true
+    caveat: info
+    citation: "World Bank Open Knowledge Repository"
+    notes: "Check each item's licence; some are NC-ND."
+    evidence: ["https://blogs.worldbank.org/en/voices/Open-in-Action-at-the-World-Bank"]
+  imf_publications:
+    name: "IMF publications"
+    licence: "All Rights Reserved"
+    licence_status: V
+    commercial_use: restricted
+    commercial_use_status: V
+    third_party_flags: false
+    caveat: warn
+    citation: "International Monetary Fund"
+    notes: "Metadata, page citations and short quotes only."
+    evidence: ["https://www.imf.org/en/About/copyright-and-terms"]
+  openalex:
+    name: "OpenAlex"
+    licence: "CC0"
+    licence_status: V
+    commercial_use: "yes"
+    commercial_use_status: V
+    third_party_flags: false
+    caveat: none
+    citation: "OpenAlex"
+    notes: "Free key; paid tier terms unknown."
+    evidence: ["https://help.openalex.org/data/licenses/"]
+  crossref:
+    name: "Crossref REST API"
+    licence: "Metadata free to reuse"
+    licence_status: V
+    commercial_use: "yes"
+    commercial_use_status: V
+    third_party_flags: false
+    caveat: none
+    citation: "Crossref"
+    notes: "Send a mailto parameter."
+    evidence: ["https://crossref.org/blog/announcing-changes-to-rest-api-rate-limits/"]
+  semantic_scholar:
+    name: "Semantic Scholar API"
+    licence: "Commercial licence needed"
+    licence_status: V
+    commercial_use: "no"
+    commercial_use_status: V
+    third_party_flags: false
+    caveat: block
+    citation: "Semantic Scholar"
+    notes: "Excluded until licensed."
+    evidence: ["https://api.semanticscholar.org/license"]
+
+  # --- derived results ---------------------------------------------------------
+  cgjrkit:
+    name: "cgjrkit derived results"
+    licence: "Code MIT (planned open layer); derived data inherit the licences of their inputs"
+    licence_status: I
+    commercial_use: yes_with_attribution
+    commercial_use_status: I
+    third_party_flags: false
+    caveat: none
+    citation: "cgjrkit staff calculations"
+    notes: "Read the input sources' entries from Result.provenance."
+    evidence: ["inventory/build-plan.md section 3"]

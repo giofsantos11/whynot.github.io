@@ -1,0 +1,148 @@
+{
+ "data": {
+  "locationCountry": [
+   {
+    "countryId": 404,
+    "iso3Code": "KEN",
+    "nameShortEn": "Kenya",
+    "formerCountry": false
+   },
+   {
+    "countryId": 704,
+    "iso3Code": "VNM",
+    "nameShortEn": "Vietnam",
+    "formerCountry": false
+   },
+   {
+    "countryId": 800,
+    "iso3Code": "UGA",
+    "nameShortEn": "Uganda",
+    "formerCountry": false
+   },
+   {
+    "countryId": 392,
+    "iso3Code": "JPN",
+    "nameShortEn": "Japan",
+    "formerCountry": false
+   },
+   {
+    "countryId": 834,
+    "iso3Code": "TZA",
+    "nameShortEn": "Tanzania",
+    "formerCountry": false
+   },
+   {
+    "countryId": 810,
+    "iso3Code": "SUN",
+    "nameShortEn": "Soviet Union (synthetic)",
+    "formerCountry": true
+   },
+   {
+    "countryId": 520,
+    "iso3Code": "NRU",
+    "nameShortEn": "Nauru",
+    "formerCountry": false
+   }
+  ],
+  "countryYear": [
+   {
+    "countryId": 392,
+    "year": 2097,
+    "eci": 2.0,
+    "exportValue": 1000000000,
+    "importValue": 2000000000
+   },
+   {
+    "countryId": 704,
+    "year": 2097,
+    "eci": 0.5,
+    "exportValue": 5000000000,
+    "importValue": 2000000000
+   },
+   {
+    "countryId": 404,
+    "year": 2097,
+    "eci": -0.5,
+    "exportValue": 6000000000,
+    "importValue": 2000000000
+   },
+   {
+    "countryId": 834,
+    "year": 2097,
+    "eci": -0.5,
+    "exportValue": 2000000000,
+    "importValue": 2000000000
+   },
+   {
+    "countryId": 800,
+    "year": 2097,
+    "eci": -1.0,
+    "exportValue": 3000000000,
+    "importValue": 2000000000
+   },
+   {
+    "countryId": 810,
+    "year": 2097,
+    "eci": 3.0,
+    "exportValue": 6000000000,
+    "importValue": 2000000000
+   },
+   {
+    "countryId": 520,
+    "year": 2097,
+    "eci": null,
+    "exportValue": 3000000000,
+    "importValue": 2000000000
+   },
+   {
+    "countryId": 392,
+    "year": 2098,
+    "eci": 2.1,
+    "exportValue": 1000000000,
+    "importValue": 2000000000
+   },
+   {
+    "countryId": 704,
+    "year": 2098,
+    "eci": 0.6,
+    "exportValue": 5000000000,
+    "importValue": 2000000000
+   },
+   {
+    "countryId": 404,
+    "year": 2098,
+    "eci": -0.4,
+    "exportValue": 6000000000,
+    "importValue": 2000000000
+   },
+   {
+    "countryId": 834,
+    "year": 2098,
+    "eci": -0.6,
+    "exportValue": 2000000000,
+    "importValue": 2000000000
+   },
+   {
+    "countryId": 800,
+    "year": 2098,
+    "eci": -0.9,
+    "exportValue": 3000000000,
+    "importValue": 2000000000
+   },
+   {
+    "countryId": 810,
+    "year": 2098,
+    "eci": null,
+    "exportValue": 6000000000,
+    "importValue": 2000000000
+   },
+   {
+    "countryId": 520,
+    "year": 2098,
+    "eci": null,
+    "exportValue": 3000000000,
+    "importValue": 2000000000
+   }
+  ]
+ }
+}

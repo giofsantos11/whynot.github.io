@@ -1,0 +1,6 @@
+{
+ "code": "SYNTHETIC_ERROR",
+ "message": "Synthetic error message for tests",
+ "correlationId": "00000000000000000000000000000000",
+ "path": "/external/sdmx/3.0/data/dataflow/IMF.RES/WEO/+/XXX"
+}

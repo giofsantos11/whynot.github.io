@@ -1,0 +1,30 @@
+{
+ "data": {
+  "codelists": [
+   {
+    "id": "CL_WEO_INDICATOR",
+    "agencyID": "IMF.RES",
+    "version": "1.0.0",
+    "name": "Synthetic codelist",
+    "codes": [
+     {
+      "id": "GGXWDG_NGDP",
+      "name": "Synthetic label: gross debt"
+     },
+     {
+      "id": "NGDP_RPCH",
+      "name": "Synthetic label: real growth"
+     }
+    ]
+   }
+  ]
+ },
+ "meta": {
+  "schema": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/master/metadata-message/tools/schemas/2.0.0/sdmx-json-metadata-schema.json",
+  "id": "SYNTHETIC-TEST-FIXTURE",
+  "prepared": "2026-01-01T00:00:00Z",
+  "contentLanguages": [
+   "en"
+  ]
+ }
+}

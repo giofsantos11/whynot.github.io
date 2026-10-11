@@ -1,0 +1,82 @@
+{
+  "status": "OK",
+  "data": {
+    "id": 999001,
+    "identifier": "SYNTHETIC",
+    "persistentUrl": "https://doi.org/10.34894/QT5BCC",
+    "protocol": "doi",
+    "authority": "10.34894",
+    "publisher": "SYNTHETIC FIXTURE - not a real Dataverse record",
+    "latestVersion": {
+      "id": 999101,
+      "datasetId": 999001,
+      "datasetPersistentId": "doi:10.34894/QT5BCC",
+      "versionNumber": 9,
+      "versionMinorNumber": 1,
+      "versionState": "RELEASED",
+      "files": [
+        {
+          "label": "pwt1001.xlsx",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 999101,
+          "dataFile": {
+            "id": 900001,
+            "persistentId": "",
+            "filename": "pwt1001.xlsx",
+            "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "filesize": 1000,
+            "md5": "00000000000000000000000000000001",
+            "checksum": {"type": "MD5", "value": "00000000000000000000000000000001"}
+          }
+        },
+        {
+          "label": "pwt1001.tab",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 999101,
+          "dataFile": {
+            "id": 900002,
+            "persistentId": "",
+            "filename": "pwt1001.tab",
+            "contentType": "text/tab-separated-values",
+            "filesize": 2000,
+            "originalFileFormat": "application/x-stata-14",
+            "originalFormatLabel": "Stata 14 Binary",
+            "originalFileName": "pwt1001.dta",
+            "checksum": {"type": "MD5", "value": "00000000000000000000000000000002"}
+          }
+        },
+        {
+          "label": "pwt1001_na_data.xlsx",
+          "directoryLabel": "Underlying detail",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 999101,
+          "dataFile": {
+            "id": 900003,
+            "persistentId": "",
+            "filename": "pwt1001_na_data.xlsx",
+            "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "filesize": 3000,
+            "checksum": {"type": "MD5", "value": "00000000000000000000000000000003"}
+          }
+        },
+        {
+          "label": "pwt1001-whatsnew.pdf",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 999101,
+          "dataFile": {
+            "id": 900004,
+            "persistentId": "",
+            "filename": "pwt1001-whatsnew.pdf",
+            "contentType": "application/pdf",
+            "filesize": 4000,
+            "checksum": {"type": "MD5", "value": "00000000000000000000000000000004"}
+          }
+        }
+      ]
+    }
+  }
+}

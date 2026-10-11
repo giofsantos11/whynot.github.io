@@ -1,0 +1,48 @@
+{
+ "meta": {
+  "id": "SYNTHETIC-EMPTY"
+ },
+ "data": {
+  "dataSets": [
+   {
+    "structure": 0,
+    "action": "Replace",
+    "dimensionGroupAttributes": {}
+   }
+  ],
+  "structures": [
+   {
+    "dimensions": {
+     "series": [
+      {
+       "id": "COUNTRY",
+       "values": []
+      },
+      {
+       "id": "INDICATOR",
+       "values": []
+      },
+      {
+       "id": "FREQUENCY",
+       "values": []
+      }
+     ],
+     "observation": [
+      {
+       "id": "TIME_PERIOD",
+       "values": []
+      }
+     ]
+    },
+    "attributes": {},
+    "measures": {
+     "observation": [
+      {
+       "id": "OBS_VALUE"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

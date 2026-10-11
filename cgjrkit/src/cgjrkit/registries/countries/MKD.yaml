@@ -1,0 +1,45 @@
+# Country registry: North Macedonia. "status" uses verified/unverified;
+# unknown values are written as "unknown".
+schema_version: 1
+iso3: MKD
+iso2: MK
+name: North Macedonia
+currency: MKD
+report:
+  code: MKD-2026
+  title: "North Macedonia: Escaping the Middle-Income Trap. Growth and Jobs Report (World Bank Group, 2026)"
+
+fiscal_year:
+  start_month: 1          # January - December (calendar year)
+  end_month: 12
+  label_format: "calendar year (2024)"
+  status: verified
+  evidence: ["North Macedonia CGJR front matter: 'Government Fiscal Year: January-December'"]
+  notes: "Fiscal year equals the calendar year; no conversion needed."
+
+statistics_office:
+  name: "State Statistical Office of the Republic of North Macedonia (MakStat database)"
+  host: www.stat.gov.mk
+  status: unverified
+  evidence: ["inventory/build-plan.md section 5.2 (NSO hostnames U)"]
+other_official_hosts:
+  - {name: "National Bank of the Republic of North Macedonia", host: www.nbrm.mk, status: unverified}
+  - {name: "Ministry of Finance", host: finance.gov.mk, status: unverified}
+
+national_accounts:
+  base_year: unknown
+  candidate_reference_year: 2005
+  sna: "ESA 2010"
+  status: unverified
+  evidence:
+    - "CEIC tables of SSO ESA 2010 GDP labelled 'chain-linked 2005 prices' (https://ceicdata.com/en/macedonia/esa-2010-gdp-by-expenditure-chainlinked-2005-price)"
+    - "Eurostat publishes North Macedonia chain-linked volumes with reference year 2010 (https://db.nomics.world/Eurostat/t2020_rd210/A.B1GQ.EUR_M3_CLV10.MK)"
+  notes: "Chain-linked volumes (previous-year prices). The SSO reference year was not confirmed on stat.gov.mk; check SSO metadata before replicating level charts."
+
+ppp:
+  report_ppp_bases: ["2021", "PPS"]
+  notes:
+    - "The report charts GDP per capita, PPP, constant 2021 international $, as % of the EU average (WDI, 2021 PPPs)."
+    - "Some charts use Eurostat PPS (purchasing power standards, current prices, EU=100). PPS is not the ICP international dollar: keep PPS and PPP series apart."
+    - "Firm charts convert values to PPP terms with WDI conversion factors for 2023; record the PPP base used."
+  exchange_rate_front_matter: "EUR 1.00 : USD 1.17 : MKD 61.36 (effective 12 May 2026)"

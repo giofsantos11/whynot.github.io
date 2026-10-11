@@ -1,0 +1,47 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 500,
+    "items": [
+      {
+        "DOI": "10.5555/synthetic.0001",
+        "title": ["SYNTHETIC TEST RECORD: A Work About Structural Change"],
+        "author": [{"given": "Synthetic", "family": "Author One", "sequence": "first", "affiliation": []}],
+        "issued": {"date-parts": [[2000, 6]]},
+        "published": {"date-parts": [[2000, 6]]},
+        "type": "journal-article",
+        "container-title": ["Synthetic Journal of Tests"],
+        "publisher": "Synthetic Publisher",
+        "is-referenced-by-count": 50,
+        "URL": "https://doi.org/10.5555/synthetic.0001"
+      },
+      {
+        "DOI": "10.5555/synthetic.0002",
+        "title": ["SYNTHETIC TEST RECORD: Retracted Paper"],
+        "author": [{"given": "Synthetic", "family": "Author Three", "sequence": "first", "affiliation": []}],
+        "issued": {"date-parts": [[null]]},
+        "published-online": {"date-parts": [[2001, 2, 3]]},
+        "type": "journal-article",
+        "container-title": [],
+        "group-title": "Synthetic Preprint Group",
+        "publisher": "Synthetic Publisher",
+        "is-referenced-by-count": 5,
+        "URL": "https://doi.org/10.5555/synthetic.0002",
+        "updated-by": [{"DOI": "10.5555/synthetic.0002.retraction", "type": "retraction", "label": "Retraction", "source": "retraction-watch", "updated": {"date-parts": [[2002, 1, 1]]}}]
+      },
+      {
+        "DOI": "10.5555/synthetic.0003",
+        "title": [],
+        "type": "posted-content",
+        "publisher": "Synthetic Publisher",
+        "is-referenced-by-count": 0,
+        "URL": "https://doi.org/10.5555/synthetic.0003"
+      }
+    ],
+    "items-per-page": 3,
+    "query": {"start-index": 0, "search-terms": "synthetic structural change"}
+  }
+}

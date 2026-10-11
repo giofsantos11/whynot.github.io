@@ -1,0 +1,18 @@
+[
+ {
+  "field_name": "REF_AREA",
+  "label_name": "Reference area",
+  "field_value": [
+   "KEN",
+   "UGA"
+  ]
+ },
+ {
+  "field_name": "COMP_BREAKDOWN_1",
+  "label_name": "Breakdown",
+  "field_value": [
+   "_T",
+   "SYNTH_SIZE_SMALL"
+  ]
+ }
+]

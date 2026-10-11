@@ -1,0 +1,7 @@
+{
+ "regions": {
+  "SSQ": {"label": "Synthetic label: Sub-Saharan Africa (Region)"},
+  "WHQ": {"label": "Synthetic label: Western Hemisphere (Region)"}
+ },
+ "api": {"version": "1", "output-method": "json"}
+}

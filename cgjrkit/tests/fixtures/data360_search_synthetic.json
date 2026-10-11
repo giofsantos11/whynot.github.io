@@ -1,0 +1,28 @@
+{
+ "_note": "SYNTHETIC fixture. Layout follows POST /data360/searchv2 (value[].series_description).",
+ "@odata.count": 2,
+ "value": [
+  {
+   "@search.score": 2.0,
+   "series_description": {
+    "idno": "WB_ES_T_SYNTH1",
+    "name": "Synthetic ES indicator A",
+    "database_id": "WB_ES"
+   }
+  },
+  {
+   "@search.score": 1.0,
+   "series_description": {
+    "idno": "WB_ES_T_SYNTH2",
+    "name": "Synthetic ES indicator B",
+    "database_id": "WB_ES"
+   }
+  },
+  {
+   "@search.score": 0.5,
+   "series_description": {
+    "name": "no idno: skipped"
+   }
+  }
+ ]
+}

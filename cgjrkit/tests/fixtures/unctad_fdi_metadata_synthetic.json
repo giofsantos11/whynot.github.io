@@ -1,0 +1,81 @@
+{
+ "name": "US.FdiFlowsStock",
+ "version": 9999,
+ "lastUpdated": "2099-01-01T00:00:00",
+ "defaults": {
+  "measuresOnAxe": "page",
+  "showSingleMeasureHeader": true,
+  "observations": [
+   {
+    "code": "5011",
+    "visible": true,
+    "label": "Percentage of total world",
+    "isDefault": false,
+    "measures": [
+     {
+      "code": "5011",
+      "label": "Percentage of total world",
+      "magnitudeLabel": "-",
+      "magnitude": 1,
+      "decimals": 3,
+      "selected": true
+     }
+    ]
+   },
+   {
+    "code": "0100",
+    "visible": true,
+    "label": "US$ at current prices",
+    "isDefault": true,
+    "measures": [
+     {
+      "code": "0100",
+      "label": "US$ at current prices",
+      "magnitudeLabel": "-",
+      "magnitude": 1,
+      "decimals": 0,
+      "selected": false
+     },
+     {
+      "code": "0106",
+      "label": "US$ at current prices in millions",
+      "magnitudeLabel": "in millions",
+      "magnitude": 1000000,
+      "decimals": 0,
+      "selected": true
+     }
+    ]
+   }
+  ],
+  "rowAxe": [
+   {
+    "name": "Economies",
+    "label": "ECONOMY",
+    "field": "Economy",
+    "codetype": "string"
+   }
+  ],
+  "colAxe": [
+   {
+    "name": "Years",
+    "label": "YEAR",
+    "field": "Year",
+    "codetype": "number"
+   }
+  ],
+  "pageAxe": [
+   {
+    "name": "Directions",
+    "label": "DIRECTION",
+    "field": "Direction",
+    "codetype": "number"
+   },
+   {
+    "name": "Modes",
+    "label": "MODE",
+    "field": "Flow",
+    "codetype": "string"
+   }
+  ]
+ }
+}

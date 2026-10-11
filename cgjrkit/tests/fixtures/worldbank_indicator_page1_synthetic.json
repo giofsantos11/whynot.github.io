@@ -1,0 +1,9 @@
+[
+  {"page": 1, "pages": 2, "per_page": 3, "total": 5, "sourceid": "2", "lastupdated": "2000-01-01",
+   "_note": "SYNTHETIC fixture (page 1 of 2): World Bank API v2 multi-indicator response format; values are made up, not real data."},
+  [
+    {"indicator": {"id": "NY.GDP.PCAP.PP.KD", "value": "GDP per capita, PPP (constant 2021 international $)"}, "country": {"id": "KE", "value": "Kenya"}, "countryiso3code": "KEN", "date": "2021", "value": 2000.0, "unit": "", "obs_status": "", "decimal": 0},
+    {"indicator": {"id": "NY.GDP.PCAP.PP.KD", "value": "GDP per capita, PPP (constant 2021 international $)"}, "country": {"id": "KE", "value": "Kenya"}, "countryiso3code": "KEN", "date": "2020", "value": 1000.0, "unit": "", "obs_status": "", "decimal": 0},
+    {"indicator": {"id": "NY.GDP.PCAP.PP.KD", "value": "GDP per capita, PPP (constant 2021 international $)"}, "country": {"id": "UG", "value": "Uganda"}, "countryiso3code": "UGA", "date": "2021", "value": 3000.0, "unit": "", "obs_status": "", "decimal": 0}
+  ]
+]

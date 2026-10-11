@@ -1,0 +1,11 @@
+[
+  {"page": 1, "pages": 1, "per_page": "50", "total": 1,
+   "_note": "SYNTHETIC fixture: World Bank API v2 indicator metadata format; texts are placeholders."},
+  [
+    {"id": "NY.GDP.PCAP.PP.KD", "name": "GDP per capita, PPP (constant 2021 international $)", "unit": "",
+     "source": {"id": "2", "value": "World Development Indicators"},
+     "sourceNote": "SYNTHETIC source note for testing.",
+     "sourceOrganization": "SYNTHETIC source organization for testing.",
+     "topics": [{"id": "3", "value": "Economy & Growth "}]}
+  ]
+]

@@ -93,6 +93,8 @@ class Result:
         cites = []
         for p in self.provenance:
             cite = p.citation or p.dataset or p.source
+            if not cite:
+                continue
             if p.vintage:
                 cite = f"{cite} ({p.vintage})"
             if cite not in cites:

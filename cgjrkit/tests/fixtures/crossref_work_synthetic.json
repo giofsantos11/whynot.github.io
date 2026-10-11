@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {"date-parts": [[2000, 1, 2]], "date-time": "2000-01-02T00:00:00Z", "timestamp": 946771200000},
+    "reference-count": 0,
+    "publisher": "Synthetic Publisher",
+    "content-domain": {"domain": [], "crossmark-restriction": false},
+    "short-container-title": [],
+    "abstract": "<jats:p>SYNTHETIC ABSTRACT THAT MUST NOT BE READ INTO THE TABLE.</jats:p>",
+    "DOI": "10.5555/SYNTHETIC.0001",
+    "type": "report",
+    "created": {"date-parts": [[1999, 12, 1]], "date-time": "1999-12-01T00:00:00Z", "timestamp": 944006400000},
+    "source": "Crossref",
+    "is-referenced-by-count": 50,
+    "title": ["SYNTHETIC TEST RECORD: A Work About Structural Change"],
+    "subtitle": ["Evidence From Made-Up Data"],
+    "prefix": "10.5555",
+    "author": [
+      {"given": "Synthetic", "family": "Author One", "sequence": "first", "affiliation": []},
+      {"given": "Synthetic", "family": "Author Two", "sequence": "additional", "affiliation": []},
+      {"name": "Synthetic Consortium", "sequence": "additional", "affiliation": []}
+    ],
+    "member": "0",
+    "container-title": [],
+    "institution": [{"name": "Synthetic Institute of Tests", "place": ["Nowhere"]}],
+    "deposited": {"date-parts": [[2000, 1, 1]], "date-time": "2000-01-01T00:00:00Z", "timestamp": 946684800000},
+    "score": 1,
+    "resource": {"primary": {"URL": "https://example.org/synthetic/0001"}},
+    "issued": {"date-parts": [[2000, 6]]},
+    "references-count": 0,
+    "URL": "https://doi.org/10.5555/synthetic.0001",
+    "published": {"date-parts": [[2000, 6]]}
+  }
+}

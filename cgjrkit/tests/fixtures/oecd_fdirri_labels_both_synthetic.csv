@@ -1,0 +1,3 @@
+DATAFLOW,REF_AREA: Reference area,ACTIVITY: Economic activity,POL_CAT: Policy category,MEASURE: Measure,UNIT_MEASURE: Unit of measure,TIME_PERIOD: Time period,OBS_VALUE,DECIMALS: Decimals,UNIT_MULT: Unit multiplier,OBS_STATUS: Observation status
+OECD.DAF.INV:DSD_FDIRRI_SCORES@DF_FDIRRI_SCORES(2.0),KEN: Kenya,_T: Total - All activities,_T: Total,RR: Regulatory restrictiveness,IX: Index,2023,0.1,3: Three,0: Units,A: Normal value
+OECD.DAF.INV:DSD_FDIRRI_SCORES@DF_FDIRRI_SCORES(2.0),PHL: Philippines,_T: Total - All activities,_T: Total,RR: Regulatory restrictiveness,IX: Index,2023,0.4,3: Three,0: Units,A: Normal value

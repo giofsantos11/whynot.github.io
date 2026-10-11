@@ -1,0 +1,45 @@
+{
+ "_note": "SYNTHETIC fixture. Layout follows POST /data360/metadata responses (value[].series_description, fields as in a published sample response). Names, dates and citations are invented.",
+ "@odata.count": 1,
+ "value": [
+  {
+   "@search.score": 1.0,
+   "id": "META_WB_ES_T_SYNTH1",
+   "type": "indicator",
+   "series_description": {
+    "idno": "WB_ES_T_SYNTH1",
+    "name": "Synthetic ES indicator A",
+    "database_id": "WB_ES",
+    "database_name": "Enterprise Surveys",
+    "measurement_unit": "Percent of firms (synthetic)",
+    "periodicity": "Irregular",
+    "version_statement": {
+     "version": null,
+     "version_date": "2099-01-01",
+     "version_resp": null,
+     "version_notes": null
+    },
+    "license": [
+     {
+      "name": "CC BY 4.0",
+      "uri": "https://example.invalid/licence",
+      "note": "synthetic"
+     }
+    ],
+    "citation_requirement": "Synthetic citation (fixture)",
+    "aliases": [
+     {
+      "alias": "SYN.1"
+     }
+    ],
+    "time_periods": [
+     {
+      "start": "2013",
+      "end": "2018",
+      "notes": null
+     }
+    ]
+   }
+  }
+ ]
+}
